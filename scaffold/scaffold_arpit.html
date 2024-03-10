@@ -1,0 +1,923 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>rohit wrbsite</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <!-- link swiper -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+    <!-- link icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <!-- link css -->
+    <link rel="stylesheet" href="./scaffold.css">
+    <!-- jquery cdn -->
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    <!-- animate css link -->
+    <link rel="stylesheet" href="css/animate.css">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <script src="js/wow.min.js" defer></script>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light position-fixed top-0 w-100">
+        <div class="container">
+          <a class="navbar-brand" href="#">Navbar</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav ms-auto text-center">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item dropdown laptop">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  About
+                </a>
+                <ul class="dropdown-menu laptop-hover" aria-labelledby="navbarDropdownMenuLink">
+                  <li><a class="dropdown-item" href="#">About us</a></li>
+                  <li><a class="dropdown-item" href="#">Team</a></li>
+                  <li><a class="dropdown-item" href="#">Testimonials</a></li>
+                  <li class="dropdown patil">
+                    <a class="dropdown-item" href="#">Deep drop down <i class="bi bi-caret-right-fill"></i></a>
+                    <ul class="dropdown-menu" id="ruchi">
+                        <li><a href="" class="dropdown-item">Deep drop down 1</a></li>
+                        <li><a href="" class="dropdown-item">Deep drop down 2</a></li>
+                        <li><a href="" class="dropdown-item">Deep drop down 3</a></li>
+                        <li><a href="" class="dropdown-item">Deep drop down 4</a></li>
+                        <li><a href="" class="dropdown-item">Deep drop down 5</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Sevices</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Portfolio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Pricing</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Contact</a>
+              </li>
+            </ul>
+            <ul class="d-flex align-items-center justify-content-center ms-3 mb-0 p-0">
+                <li class="list-unstyled p-2"><a href=""><i class="bi bi-twitter"></i></a></li>
+                <li class="list-unstyled p-2"><a href=""><i class="bi bi-facebook"></i></a></li>
+                <li class="list-unstyled p-2"><a href=""><i class="bi bi-instagram"></i></a></li>
+                <li class="list-unstyled p-2"><a href=""><i class="bi bi-linkedin"></i></a></li>
+            </ul>
+          </div>
+        </div>
+    </nav>
+
+    <!-- banner first-content-->
+    <div class="container first-row mt-5 overflow-hidden">
+        <div class="row pt-5">
+            <div class="col-lg-6 col-sm-12 order-md-2 order-lg-1 animate__animated animate__bounceInLeft text-md-center text-sm-center">
+                <h1>We design digital products <br>that help grow businesses</h1>
+                <p>We are team of talented designers making websites <br> with Bootstrap</p>
+                <a href="" class="btn bg-info">Get Started</a>
+            </div>
+            <div class="col-lg-6 col-sm-12 order-md-1 order-lg-2 animate__animated animate__bounceInRight">
+                <img src="./scaffold_images/main_image.png" alt="path not found">
+            </div>
+        </div>
+    </div>
+
+    <!-- second content-->
+    <div class="container second-row mt-5">
+        <div class="row overflow-hidden">
+            <div class="col-lg-6 col-sm-12 animate__animated animate__bounceInUp"><img src="./scaffold_images/about_us.jpg" alt="image not found"></div>
+            <div class="col-lg-6 col-sm-12 pt-sm-2 animate__animated animate__bounceInRight">
+                <h2>Learn more about us</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod <br> tempor incididunt ut labore et dolore magna aliqua.</p>
+                <p><i class="bi bi-check2-circle text-success"></i>Ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                </p>
+                <p><i class="bi bi-check2-circle text-success"></i>Duis aute irure dolor in reprehenderit in voluptate velit.</p>
+                <p><i class="bi bi-check2-circle text-success"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate trideta storacalaperd</p>
+                <p>Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate tera noden carma palorp mades tera.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- third content don't touch-->
+    <div class="container third-row mt-5">
+        <div class="row overflow-hidden">
+            <div class="col-lg-6 mt-2 mb-tg-0 order-2 order-lg-1 animate__animated animate__slideInUp">
+                <ul class="nav nav-tabs flex-column" role="tablist">
+                  <li class="nav-item aos-init aos-animate" data-aos="fade-up" role="presentation">
+                    <a class="nav-link active show" data-bs-toggle="tab" href="#tab-1" aria-selected="true" role="tab">
+                      <h4>Modi sit est</h4>
+                      <p>Quis excepturi porro totam sint earum quo nulla perspiciatis eius.</p>
+                    </a>
+                  </li>
+                  <li class="nav-item mt-2 aos-init aos-animate" data-aos="fade-up" data-aos-delay="100" role="presentation">
+                    <a class="nav-link" data-bs-toggle="tab" href="#tab-2" aria-selected="false" tabindex="-1" role="tab">
+                      <h4>Unde praesentium sed</h4>
+                      <p>Voluptas vel esse repudiandae quo excepturi.</p>
+                    </a>
+                  </li>
+                  <li class="nav-item mt-2 aos-init aos-animate" data-aos="fade-up" data-aos-delay="200" role="presentation">
+                    <a class="nav-link" data-bs-toggle="tab" href="#tab-3" aria-selected="false" tabindex="-1" role="tab">
+                      <h4>Pariatur explicabo vel</h4>
+                      <p>Velit veniam ipsa sit nihil blanditiis mollitia natus.</p>
+                    </a>
+                  </li>
+                  <li class="nav-item mt-2 aos-init aos-animate" data-aos="fade-up" data-aos-delay="300" role="presentation">
+                    <a class="nav-link" data-bs-toggle="tab" href="#tab-4" aria-selected="false" tabindex="-1" role="tab">
+                      <h4>Nostrum qui quasi</h4>
+                      <p>Ratione hic sapiente nostrum doloremque illum nulla praesentium id</p>
+                    </a>
+                  </li>
+                </ul>
+            </div>
+            <div class="col-lg-6 order-1 order-lg-2 aos-init aos-animate animate__animated animate__zoomIn" data-aos="zoom-in">
+                <div class="tab-content">
+                  <div class="tab-pane active show" id="tab-1" role="tabpanel">
+                    <figure>
+                      <img src="./scaffold_images/tab_1.png" alt="" class="img-fluid">
+                    </figure>
+                  </div>
+                  <div class="tab-pane" id="tab-2" role="tabpanel">
+                    <figure>
+                      <img src="./scaffold_images/tab_2.png" alt="" class="img-fluid">
+                    </figure>
+                  </div>
+                  <div class="tab-pane" id="tab-3" role="tabpanel">
+                    <figure>
+                      <img src="./scaffold_images/tab_3.png" alt="" class="img-fluid">
+                    </figure>
+                  </div>
+                  <div class="tab-pane" id="tab-4" role="tabpanel">
+                    <figure>
+                      <img src="./scaffold_images/tab_4.png" alt="" class="img-fluid">
+                    </figure>
+                  </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- fourth content -->
+    <div class="container fourth-content mt-5 text-center overflow-hidden">
+        <h2 class="animate__animated animate__zoomInDown">Service</h2>
+        <p class="animate__animated animate__zoomInDown">Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+        <div class="d-flex justify-content-around flex-sm-wrap">
+            <div class="col-lg-2 col-sm-12 col-md-5 box1  animate__animated animate__zoomInLeft">
+                <i class="bi bi-dribbble text-danger"></i>
+                <h4><a href class="text-dark">lorem ipsum</a></h4>
+                <p>Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate</p>
+            </div>
+            <div class="col-lg-2 col-sm-12 me-sm-1 col-md-5 box2 animate__animated animate__zoomInLeft">
+                <i class="bi bi-file-earmark-check text-info"></i>
+                <h4><a href class="text-dark">Sed ut <br> perspiciatis</a></h4>
+                <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla</p>
+            </div>
+            <div class="col-lg-2 col-sm-12 me-sm-1 col-md-5 box3 animate__animated animate__zoomInLeft">
+                <i class="bi bi-speedometer2 text-success"></i>
+                <h4><a href class="text-dark">Magni Dolores</a></h4>
+                <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim</p>
+            </div>
+            <div class="col-lg-2 col-sm-12 col-md-5 box4 animate__animated animate__zoomInLeft">
+                <i class="bi bi-globe text-info"></i>
+                <h4><a href class="text-dark">Nemo Enim</a></h4>
+                <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- fifth content -->
+    <div class="container mt-5 text-center fifth-content overflow-hidden">
+        <h2 class="animate__animated animate__flipInX">Portfolio</h2>
+        <p class="animate__animated animate__fadeInUpBig overflow-hidden">Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. <br> Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic <br>quas.</p>
+        <ul class="nav nav-tabs mb-3 justify-content-center animate__animated animate__slideInUp" id="main" role="tablist">
+          <li class="nav-item active">
+            <button class="nav-link active" data-bs-toggle="tab" data-bs-target="#all">All</button>
+          </li>
+          <li class="nav-item">
+            <button class="nav-link active" data-bs-toggle="tab" data-bs-target="#app">App</button>
+          </li>
+          <li class="nav-item">
+            <button class="nav-link"  data-bs-toggle="tab" data-bs-target="#card">Card</button>
+          </li>
+          <li class="nav-item" >
+            <button class="nav-link" data-bs-toggle="tab" data-bs-target="#web">Web</button>
+          </li>
+        </ul>
+        <div class="tab-content animate__animated animate__rubberBand">
+          <!-- first toggle -->
+          <div class="tab-pane fade active show" id="all">
+            <div class="row col-12">
+              <div class="col-lg-4 mb-3 col-sm-12 col-md-6 ps-lg-2">
+                <img src="./scaffold_images/portfolio1.jpg" alt="">
+                <div class="hover">
+                  <h3>App1</h3>
+                  <span>APP</span><br>
+                  <i class="bi bi-link-45deg"></i><i class="bi bi-plus"></i>
+                </div>
+              </div>
+              <div class="col-lg-4 mb-3 col-sm-12 col-md-6 ps-lg-2">
+                  <img src="./scaffold_images/portfolio2.jpg" alt="">
+                  <div class="hover">
+                    <h3>Web3</h3>
+                    <span>WEB</span><br>
+                    <i class="bi bi-link-45deg"></i><i class="bi bi-plus"></i>
+                  </div>
+              </div>
+              <div class="col-lg-4 mb-3 col-sm-12 col-md-6 ps-lg-2">
+                  <img src="./scaffold_images/portfolio3.jpg" alt="">
+                  <div class="hover">
+                    <h3>App2</h3>
+                    <span>APP</span><br>
+                    <i class="bi bi-link-45deg"></i><i class="bi bi-plus"></i>
+                  </div>
+              </div>
+              <div class="col-lg-4 mb-3 col-sm-12 col-md-6 ps-lg-2">
+                  <img src="./scaffold_images/portfolio4.jpg" alt="">
+                  <div class="hover">
+                    <h3>Card2</h3>
+                    <span>CARD</span><br>
+                    <i class="bi bi-link-45deg"></i><i class="bi bi-plus"></i>
+                  </div>
+              </div>
+              <div class="col-lg-4 mb-3 col-sm-12 col-md-6 ps-lg-2">
+                  <img src="./scaffold_images/portfolio5.jpg" alt="">
+                  <div class="hover">
+                    <h3>Web2</h3>
+                    <span>WEB</span><br>
+                    <i class="bi bi-link-45deg"></i><i class="bi bi-plus"></i>
+                  </div>
+              </div>
+              <div class="col-lg-4 mb-3 col-sm-12 col-md-6 ps-lg-2">
+                  <img src="./scaffold_images/portfolio6.jpg" alt="">
+                  <div class="hover">
+                    <h3>App3</h3>
+                    <span>APP</span><br>
+                    <i class="bi bi-link-45deg"></i><i class="bi bi-plus"></i>
+                  </div>
+              </div>
+              <div class="col-lg-4 col-sm-12 mb-sm-3 col-md-6 ps-lg-2">
+                  <img src="./scaffold_images/portfolio7.jpg" alt="">
+                  <div class="hover">
+                    <h3>Card1</h3>
+                    <span>CARD</span><br>
+                    <i class="bi bi-link-45deg"></i><i class="bi bi-plus"></i>
+                  </div>
+              </div>
+              <div class="col-lg-4 col-sm-12 mb-sm-3 col-md-6 ps-lg-2">
+                  <img src="./scaffold_images/portfolio8.jpg" alt="">
+                  <div class="hover">
+                    <h3>Card3</h3>
+                    <span>CARD</span><br>
+                    <i class="bi bi-link-45deg"></i><i class="bi bi-plus"></i>
+                  </div>
+              </div>
+              <div class="col-lg-4 col-sm-12 col-md-6 mb-sm-3 ps-lg-2">
+                  <img src="./scaffold_images/portfolio9.jpg" alt="">
+                  <div class="hover">
+                  <h3>Web3</h3>
+                  <span>WEB</span><br>
+                  <i class="bi bi-link-45deg"></i><i class="bi bi-plus"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- second toogle -->
+          <div class="tab-pane fade" id="app" >
+            <div class="row col-12">
+              <div class="col-lg-4 mb-3 col-sm-12 col-md-6 ps-lg-2">
+                <img src="./scaffold_images/portfolio1.jpg" alt="">
+              </div>
+              <div class="col-lg-4 mb-3 col-sm-12 col-md-6 ps-lg-2">
+                <img src="./scaffold_images/portfolio3.jpg" alt="">
+              </div>
+              <div class="col-lg-4 mb-3 col-sm-12 col-md-6 ps-lg-2">
+                <img src="./scaffold_images/portfolio6.jpg" alt="">
+              </div>
+            </div>
+          </div>
+          <!-- second toggle end -->
+
+          <!-- third toggle -->
+          <div class="tab-pane fade" id="card">
+            <div class="row col-12">
+              <div class="col-lg-4 mb-3 col-sm-12 col-md-6 ps-lg-2">
+                <img src="./scaffold_images/portfolio4.jpg" alt="">
+              </div>
+              <div class="col-lg-4 col-sm-12 mb-sm-3 col-md-6 ps-lg-2">
+                <img src="./scaffold_images/portfolio7.jpg" alt="">
+              </div>
+              <div class="col-lg-4 col-sm-12 mb-sm-3 col-md-6 ps-lg-2">
+                <img src="./scaffold_images/portfolio8.jpg" alt="">
+              </div>
+            </div>
+          </div>
+          <!-- third toggle end -->
+          
+          <!-- fourth toggle -->
+          <div class="tab-pane fade" id="web">
+            <div class="row col-12">
+              <div class="col-lg-4 mb-3 col-sm-12 col-md-6 ps-lg-2">
+                <img src="./scaffold_images/portfolio2.jpg" alt="">
+              </div>
+              <div class="col-lg-4 mb-3 col-sm-12 col-md-6 ps-lg-2">
+                <img src="./scaffold_images/portfolio5.jpg" alt="">
+              </div>
+              <div class="col-lg-4 col-sm-12 col-md-6 mb-sm-3 ps-lg-2">
+                <img src="./scaffold_images/portfolio6.jpg" alt="">
+              </div>
+            </div>
+          </div>
+          <!-- fourth toggle end -->
+        </div>
+    </div>
+
+    <!-- sixth content -->
+    <div class="sixth-content mt-5">
+      <div class="container text-sm-center">
+        <div class="d-flex align-items-center justify-content-between flex-sm-wrap overflow-hidden animate__animated animate__zoomIn">
+          <div class="col-sm-12">
+            <h2>Call To Action</h2>
+            <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla <br> pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt <br> mollit anim id est laborum.</p>
+          </div>
+          <div class="col-sm-12">
+            <a href="" class="btn btn-primary" type="button">Click To Action</a> 
+          </div>
+        </div>
+      </div>
+    </div>
+   
+    <!-- seventh content -->
+    <div class="seventh-content mt-5">
+      <div class="container text-center">
+        <div class="container-fluid mt-5">
+          <div class="text-center slider animate__animated animate__backInUp">
+              <h2 class="title">Testimonials</h2>
+              <p class="text">Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem.
+                  Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea.
+                  Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+          </div>
+          <div class="swiper mySwiper swiper-initialized swiper-horizontal swiper-backface-hidden overflow-hidden">
+              <div class="swiper-wrapper animate__animated animate__fadeInLeftBig" id="swiper-wrapper-865491c7ca8b2151" aria-live="polite" style="transition-duration: 0ms; transform: translate3d(-1690px, 0px, 0px); transition-delay: 0ms;">
+                  <div class="swiper-slide active" role="group" aria-label="1 / 4" style="width: 845px;">
+                      <div class="row">
+                          <div class="col-lg-4 col-sm-12">
+                              <div class="card-title bg-light p-2" style="height: 250px;">
+                                  <p class="text-justify pt-4" style="font-style: italic;">
+                                      Export tempor illum tamen malis malis eram quae irure esse labore quem cillum quid
+                                      cillum eram malis quorum velit fore eram velit sunt aliqua noster fugiat irure amet
+                                      legam anim culpa.
+                                  </p>
+  
+                              </div>
+                              <div class="card-text ms-4">
+                                  <img src="./scaffold_images/sara_designer.jpg" alt="" class="rounded-pill" style="width: 25%; height: 80%; margin-top: -10%;"><br>
+                                  <h4>Sara Wilsson</h4>
+                                  <h5 style="color: grey;">Designer</h5>
+                              </div>
+                          </div>
+  
+                          <div class="col-lg-4 d-sm-none d-lg-block">
+                              <div class="card-title bg-light p-2" style="height: 250px;">
+                                  <p class="text-justify pt-4" style="font-style: italic;">
+                                      Enim nisi quem export duis labore cillum quae magna enim sint quorum nulla quem
+                                      veniam duis minim tempor labore quem eram duis noster aute amet eram fore quis sint
+                                      minim.
+                                  </p>
+  
+                              </div>
+                              <div class="card-text ms-4">
+                                  <img src="./scaffold_images/janna_karles.jpg" alt="" class="rounded-pill" style="width: 25%; height: 80%; margin-top: -10%;"><br>
+                                  <h4>Jena Karlis</h4>
+                                  <h5 style="color: grey;">Store Owner</h5>
+  
+                              </div>
+                          </div>
+  
+                          <div class="col-lg-4 d-sm-none d-lg-block">
+                              <div class="card-title bg-light p-2" style="height: 250px;">
+                                  <p class="text-justify pt-4" style="font-style: italic;">
+                                      Fugiat enim eram quae cillum dolore dolor amet nulla culpa multos export minim
+                                      fugiat minim velit minim dolor enim duis veniam ipsum anim magna sunt elit fore quem
+                                      dolore labore illum veniam.
+                                  </p>
+  
+                              </div>
+                              <div class="card-text ms-4">
+                                  <img src="./scaffold_images/matt_brandon.jpg" alt="" class="rounded-pill" style="width: 25%; height: 80%; margin-top: -10%;"><br>
+                                  <h4>Matt Brandon</h4>
+                                  <h5 style="color: grey;">Freelancer</h5>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="swiper-slide swiper-slide-prev " role="group" aria-label="2 / 4" style="width: 845px;">
+                      <div class="row">
+                          <div class="col-lg-4 col-sm-12">
+                              <div class="card-title bg-light p-2" style="height: 250px;">
+                                  <p class="text-justify pt-4" style="font-style: italic;">
+                                      Fugiat enim eram quae cillum dolore dolor amet nulla culpa multos export minim
+                                      fugiat minim velit minim dolor enim duis veniam ipsum anim magna sunt elit fore quem
+                                      dolore labore illum veniam.
+                                  </p>
+  
+                              </div>
+                              <div class="card-text ms-4">
+                                  <img src="./scaffold_images/matt_brandon.jpg" alt="" class="rounded-pill" style="width: 25%; height: 80%; margin-top: -10%;"><br>
+                                  <h4>Matt Brandon</h4>
+                                  <h5 style="color: grey;">Freelancer</h5>
+                              </div>
+                          </div>
+  
+                          <div class="col-lg-4 d-sm-none d-lg-block">
+                              <div class="card-title bg-light p-2" style="height: 250px;">
+                                  <p class="text-justify pt-4" style="font-style: italic;">
+                                      Enim nisi quem export duis labore cillum quae magna enim sint quorum nulla quem
+                                      veniam duis minim tempor labore quem eram duis noster aute amet eram fore quis sint
+                                      minim.
+                                  </p>
+  
+                              </div>
+                              <div class="card-text ms-4">
+                                  <img src="./scaffold_images/janna_karles.jpg" alt="" class="rounded-pill" style="width: 25%; height: 80%; margin-top: -10%;"><br>
+                                  <h4>Jena Karlis</h4>
+                                  <h5 style="color: grey;">Store Owner</h5>
+                              </div>
+                          </div>
+  
+                          <div class="col-lg-4 d-sm-none d-lg-block">
+                              <div class="card-title bg-light p-2" style="height: 250px;">
+                                  <p class="text-justify pt-4" style="font-style: italic;">
+                                      Quis quorum aliqua sint quem legam fore sunt eram irure aliqua veniam tempor noster
+                                      veniam enim culpa labore duis sunt culpa nulla illum cillum fugiat legam esse veniam
+                                      culpa fore nisi cillum quid.
+                                  </p>
+  
+                              </div>
+                              <div class="card-text ms-4">
+                                  <img src="./scaffold_images/soul_morsen.jpg" alt="" class="rounded-pill" style="width: 25%; height: 80%; margin-top: -10%;"><br>
+                                  <h4>John Larson</h4>
+                                  <h5 style="color: grey;">Enterpreneur</h5>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="swiper-slide swiper-slide-active " role="group" aria-label="3 / 4" style="width: 845px;">
+                      <div class="row">
+                          <div class="col-lg-4 col-sm-12">
+                              <div class="card-title bg-light p-2" style="height: 250px;">
+                                  <p class="text-justify pt-4" style="font-style: italic;">
+                                      Quis quorum aliqua sint quem legam fore sunt eram irure aliqua veniam tempor noster
+                                      veniam enim culpa labore duis sunt culpa nulla illum cillum fugiat legam esse veniam
+                                      culpa fore nisi cillum quid.
+                                  </p>
+  
+                              </div>
+                              <div class="card-text ms-4">
+                                  <img src="./scaffold_images/soul_morsen.jpg" alt="" class="rounded-pill" style="width: 25%; height: 80%; margin-top: -10%;"><br>
+                                  <h4>John Larson</h4>
+                                  <h5 style="color: grey;">Enterpreneur</h5>
+                              </div>
+                          </div>
+  
+                          <div class="col-lg-4 d-sm-none d-lg-block">
+                              <div class="card-title bg-light p-2" style="height: 250px;">
+                                  <p class="text-justify pt-4" style="font-style: italic;">
+                                      Proin iaculis purus consequat sem cure digni ssim donec porttitora entum suscipit
+                                      rhoncus. Accusantium quam, ultricies eget id, aliquam eget nibh et. Maecen aliquam,
+                                      risus at semper.
+                                  </p>
+  
+                              </div>
+                              <div class="card-text ms-4">
+                                  <img src="./scaffold_images/lara_goodman.jpg" alt="" class="rounded-pill" style="width: 25%; height: 80%; margin-top: -10%;"><br>
+                                  <h4>Saul Goodman</h4>
+                                  <h5 style="color: grey;">Ceo&amp;Founder</h5>
+                              </div>
+                          </div>
+  
+                          <div class="col-lg-4 d-sm-none d-lg-block">
+                              <div class="card-title bg-light p-2" style="height: 250px;">
+                                  <p class="text-justify pt-4" style="font-style: italic;">
+                                      Export tempor illum tamen malis malis eram quae irure esse labore quem cillum quid
+                                      cillum eram malis quorum velit fore eram velit sunt aliqua noster fugiat irure amet
+                                      legam anim culpa.
+                                  </p>
+  
+                              </div>
+                              <div class="card-text ms-4">
+                                  <img src="./scaffold_images/sara_designer.jpg" alt="" class="rounded-pill" style="width: 25%; height: 80%; margin-top: -10%;"><br>
+                                  <h4>Sara Wilsson</h4>
+                                  <h5 style="color: grey;">Designer</h5>
+                              </div>
+                          </div>
+  
+                      </div>
+                  </div>
+                  <div class="swiper-slide swiper-slide-next " role="group" aria-label="4 / 4" style="width: 845px;">
+                      <div class="row">
+                          <div class="col-lg-4 col-sm-12">
+                              <div class="card-title bg-light p-2" style="height: 250px;">
+                                  <p class="text-justify pt-4" style="font-style: italic;">
+                                      Proin iaculis purus consequat sem cure digni ssim donec porttitora entum suscipit
+                                      rhoncus. Accusantium quam, ultricies eget id, aliquam eget nibh et. Maecen aliquam,
+                                      risus at semper.
+                                  </p>
+  
+                              </div>
+                              <div class="card-text ms-4">
+                                  <img src="./scaffold_images/lara_goodman.jpg" alt="" class="rounded-pill" style="width: 25%; height: 80%; margin-top: -10%;"><br>
+                                  <h4>Saul Goodman</h4>
+                                  <h5 style="color: grey;">Ceo&amp;Founder</h5>
+                              </div>
+                          </div>
+  
+                          <div class="col-lg-4 d-sm-none d-lg-block">
+                              <div class="card-title bg-light p-2" style="height: 250px;">
+                                  <p class="text-justify pt-4" style="font-style: italic;">
+                                      Export tempor illum tamen malis malis eram quae irure esse labore quem cillum quid
+                                      cillum eram malis quorum velit fore eram velit sunt aliqua noster fugiat irure amet
+                                      legam anim culpa.
+                                  </p>
+  
+                              </div>
+                              <div class="card-text ms-4">
+                                  <img src="./scaffold_images/sara_designer.jpg" alt="" class="rounded-pill" style="width: 25%; height: 80%; margin-top: -10%;"><br>
+                                  <h4>Sara Wilsson</h4>
+                                  <h5 style="color: grey;">Designer</h5>
+                              </div>
+                          </div>
+  
+                          <div class="col-lg-4 d-sm-none d-lg-block">
+                              <div class="card-title bg-light p-2" style="height: 250px;">
+                                  <p class="text-justify pt-4" style="font-style: italic;">
+                                      Enim nisi quem export duis labore cillum quae magna enim sint quorum nulla quem
+                                      veniam duis minim tempor labore quem eram duis noster aute amet eram fore quis sint
+                                      minim.
+                                  </p>
+  
+                              </div>
+                              <div class="card-text ms-4">
+                                  <img src="./scaffold_images/janna_karles.jpg" alt="" class="rounded-pill" style="width: 25%; height: 80%; margin-top: -10%;"><br>
+                                  <h4>Jena Karlis</h4>
+                                  <h5 style="color: grey;">Store Owner</h5>
+  
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+              <div class="swiper-pagination swiper-pagination-bullets swiper-pagination-horizontal"><span class="swiper-pagination-bullet"></span><span class="swiper-pagination-bullet"></span><span class="swiper-pagination-bullet swiper-pagination-bullet-active" aria-current="true"></span><span class="swiper-pagination-bullet"></span></div>
+          <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span></div>
+          <!-- Swiper JS -->
+          
+      </div>
+      </div>
+    </div>
+    
+    <!-- eight content -->
+    <section class="eight-content mt-5 overflow-hidden">
+      <div class="container text-center">
+        <h2 class="animate__animated animate__flash">Team</h2>
+        <p class="pb-3 animate__animated animate__wobble">Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. <br> Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic <br> quas.</p>
+        <div class="row">
+          <div class="col-lg-4 col-sm-7 m-auto animate__animated animate__rotateInDownLeft">
+            <img src="./scaffold_images/team-1.jpg" alt="">
+            <div class="accounts">
+              <h4>Waller White</h4>
+              <span>Chief Executive Officer</span>
+              <div class="icons">
+                <i class="bi bi-twitter"></i>
+                <i class="bi bi-facebook"></i>
+                <i class="bi bi-instagram"></i>
+                <i class="bi bi-linkedin"></i>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 d-sm-none d-lg-block animate__animated animate__flipInX">
+            <img src="./scaffold_images/team-2.jpg" alt="">
+            <div class="accounts">
+              <h4>Sarah Johnson</h4>
+              <span>Product Manager</span>
+              <div class="icons">
+                <i class="bi bi-twitter"></i>
+                <i class="bi bi-facebook"></i>
+                <i class="bi bi-instagram"></i>
+                <i class="bi bi-linkedin"></i>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 d-sm-none d-lg-block animate__animated animate__rotateInDownRight">
+            <img src="./scaffold_images/team-3.jpg" alt="">
+            <div class="accounts">
+              <h4>William Anderson</h4>
+              <span>CTO</span>
+              <div class="icons">
+                <i class="bi bi-twitter"></i>
+                <i class="bi bi-facebook"></i>
+                <i class="bi bi-instagram"></i>
+                <i class="bi bi-linkedin"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>  
+
+    <!-- nine content -->
+    <div class="nine-content mt-5 text-center overflow-hidden">
+      <div class="container">
+        <h2 class="animate__animated animate__lightSpeedInRight">Clients</h2>
+        <p class="pb-4 animate__animated animate__lightSpeedInRight">Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam <br> quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+        <div class="row flex-wrap animate__animated animate__swing">
+          <div class="col-lg-3 col-sm-12 mb-sm-5 m-sm-auto">
+            <img src="./scaffold_images/client-1.png" alt="">
+          </div>
+          <div class="col-lg-3 col-sm-12 mb-sm-5 m-sm-auto">
+            <img src="./scaffold_images/client-2.png" alt="">
+          </div>
+          <div class="col-lg-3 col-sm-12 mb-sm-5 m-sm-auto">
+            <img src="./scaffold_images/client-3.png" alt="">
+          </div>
+          <div class="col-lg-3 col-sm-12 mb-sm-5 m-sm-auto">
+            <img src="./scaffold_images/client-4.png" alt="">
+          </div>
+          <div class="col-lg-3 col-sm-12 mb-sm-5 m-sm-auto">
+            <img src="./scaffold_images/client-5.png" alt="">
+          </div>
+          <div class="col-lg-3 col-sm-12 mb-s m-5 m-sm-auto">
+            <img src="./scaffold_images/client-6.png" alt="">
+          </div>
+          <div class="col-lg-3 col-sm-12 mb-sm-5 m-sm-auto">
+            <img src="./scaffold_images/client-7.png" alt="">
+          </div>
+          <div class="col-lg-3 col-sm-5 mb-sm-5 m-sm-auto">
+            <img src="./scaffold_images/client-8.png" alt="">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ten content -->
+    <div class="ten-content mt-5 overflow-hidden">
+      <div class="container text-center">
+        <h2 class="animate__animated animate__bounceInDown">Pricing</h2>
+        <p class="animate__animated animate__bounceInDown">Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam <br> quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+        <div class="row">
+          <div class="col-lg-3 mb-sm-4 col-md-6 animate__animated animate__zoomIn">
+            <div class="card h-100">
+              <!-- image sec -->
+              <div class="card-body">
+                <h5 class="card-title">Free</h5>
+                <h2><sup>$</sup>0/month</h2>
+                <p class="card-text">Aida dere Nec</p>
+                <p> feugiat nisl</p>
+                <p>Nulla at volutpat dola</p>
+                <p class="text-secondary text-decoration-line-through">Pharetra massa</p>
+                <p class="text-secondary text-decoration-line-through">Massa ultricies mi</p>
+                <button type="button" class="btn btn-primary">Buy Now</button>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 mb-sm-4 col-md-6 animate__animated animate__zoomIn">
+            <div class="card h-100 bg-primary text-white">
+              <!-- image sec -->
+              <div class="card-body">
+                <h5 class="card-title">Businesses</h5>
+                <h2><sup>$</sup>19/month</h2>
+                <p class="card-text">Aida dere</p>
+                <p class="card-text">Nec feugiat nisl</p>
+                <p class="card-text">Nulla at volutpat dola</p>
+                <p class="card-text">Pharetra massa</p>
+                <p class="card-text text-decoration-line-through">Massa ultricies mi</p>
+                <button type="button" class="btn bg-white">Buy Now</button>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 mb-sm-4 col-md-6 animate__animated animate__zoomIn">
+            <div class="card h-100">
+              <!-- image sec -->
+              <div class="card-body">
+                <h5 class="card-title">Developer</h5>
+                <h2><sup>$</sup>29/month</h2>
+                <p class="card-text">Aida dere</p>
+                <p class="card-text">Nec feugiat nisl</p>
+                <p class="card-text">Nulla at volutpat dola</p>
+                <p class="card-text">Pharetra massa</p>
+                <p class="card-text">Massa ultricies mi</p>
+                <button type="button" class="btn btn-primary">Buy Now</button>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 mb-sm-4 col-md-6 animate__animated animate__zoomIn">
+            <div class="card h-100">
+              <!-- image sec -->
+              <div class="card-body ultimate">
+                <h5 class="card-title">Ultimate</h5>
+                <h2><sup>$</sup>49/month</h2>
+                <p class="card-text">Aida dere</p>
+                <p class="card-text">Nec feugiat nisl</p>
+                <p class="card-text">Nulla at volutpat dola</p>
+                <p class="card-text">Pharetra massa</p>
+                <p class="card-text">Massa ultricies mi</p>
+                <button type="button" class="btn btn-primary">Buy Now</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- eleventh content -->
+    <div class="eleventh-content mt-5 overflow-hidden">
+      <h1 class="text-center animate__animated animate__bounceInUp">Frequently Asked Questions</h1>
+      <div class="container">
+        <div class="ele-div">
+          <i class="bi bi-chevron-right icon-show"></i>
+          Non consectetur a erat nam at lectus urna duis?
+          <p class="iamp">Feugiat pretium nibh ipsum consequat. Tempus iaculis urna id volutpat lacus laoreet non curabitur gravida. Venenatis lectus magna fringilla urna porttitor rhoncus dolor purus non.</p>
+        </div>
+        <hr>
+        <div class="ele-div">
+          <i class="bi bi-chevron-right icon-show"></i>
+          Feugiat scelerisque varius morbi enim nunc faucibus a pellentesque?
+          <p>Dolor sit amet consectetur adipiscing elit pellentesque habitant morbi. Id interdum velit laoreet id donec ultrices. Fringilla phasellus faucibus scelerisque eleifend donec pretium. Est pellentesque elit ullamcorper dignissim. Mauris ultrices eros in cursus turpis massa tincidunt dui.</p>
+        </div>
+        <hr>
+        <div class="ele-div">
+          <i class="bi bi-chevron-right icon-show"></i>
+          Dolor sit amet consectetur adipiscing elit pellentesque habitant morbi?
+          <p class="iamp">Eleifend mi in nulla posuere sollicitudin aliquam ultrices sagittis orci. Faucibus pulvinar elementum integer enim. Sem nulla pharetra diam sit amet nisl suscipit. Rutrum tellus pellentesque eu tincidunt. Lectus urna duis convallis convallis tellus. Urna molestie at elementum eu facilisis sed odio morbi quis</p>
+        </div>
+        <hr>
+        <div class="ele-div">
+          <i class="bi bi-chevron-right icon-show"></i>
+          Ac odio tempor orci dapibus. Aliquam eleifend mi in nulla?
+          <p>Dolor sit amet consectetur adipiscing elit pellentesque habitant morbi. Id interdum velit laoreet id donec ultrices. Fringilla phasellus faucibus scelerisque eleifend donec pretium. Est pellentesque elit ullamcorper dignissim. Mauris ultrices eros in cursus turpis massa tincidunt dui.</p>
+        </div>
+        <hr>
+        <div class="ele-div">
+          <i class="bi bi-chevron-right icon-show"></i>
+          Tempus quam pellentesque nec nam aliquam sem et tortor consequat?
+          <p>Molestie a iaculis at erat pellentesque adipiscing commodo. Dignissim suspendisse in est ante in. Nunc vel risus commodo viverra maecenas accumsan. Sit amet nisl suscipit adipiscing bibendum est. Purus gravida quis blandit turpis cursus in</p>
+        </div>
+        <hr>
+        <div class="ele-div">
+          <i class="bi bi-chevron-right icon-show"></i>
+          Tortor vitae purus faucibus ornare. Varius vel pharetra vel turpis nunc eget lorem dolor?
+          <p>Laoreet sit amet cursus sit amet dictum sit amet justo. Mauris vitae ultricies leo integer malesuada nunc vel. Tincidunt eget nullam non nisi est sit amet. Turpis nunc eget lorem dolor sed. Ut venenatis tellus in metus vulputate eu scelerisque. Pellentesque diam volutpat commodo sed egestas egestas fringilla phasellus faucibus. Nibh tellus molestie nunc non blandit massa enim nec.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- tweleve content -->
+    <div class="twelve-content mt-5 overflow-hidden">
+      <div class="container">
+        <h2 class="text-center animate__animated animate__jackInTheBox">Contact Us</h2>
+        <div class="row justify-content-between">
+          <div class="col-lg-5 col-sm-12 bg-white animate__animated animate__fadeInLeft">
+            <div class="location">
+              
+              <h4><i class="bi bi-geo-alt me-1"></i> Location</h4>
+              <span class="ps-4">A108 Adam Street, New York, NY 535022</span>
+            </div>
+            <div class="email">
+              <h4><i class="bi bi-envelope me-1"></i> Email</h4>
+              <span class="ps-4">infor@example.com</span>
+            </div>
+            <div class="call">
+              <h4><i class="bi bi-telephone me-1"></i> Call</h4>
+              <span class="ps-4">+1 5589 55488 55s</span>
+            </div>
+            <div class="image w-sm-100">
+              <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d117484.85064943612!2d72.5385216!3d23.045734399999997!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1706345466367!5m2!1sen!2sin" allowfullscreen="" title="ifram tag"></iframe>
+            </div>
+          </div>
+          <div class="col-lg-6 d-flex flex-wrap col-sm-12 bg-white animate__animated animate__fadeInRight">
+            <div class="fname">
+              <p>Your Name</p>
+              <input type="text">
+            </div>
+            <div class="femail">
+              <p>Your Email</p>
+              <input type="text">
+            </div>
+            <div class="fsubject mt-sm-2 mb-sm-2">
+              <p>Subject</p>
+              <input type="text">
+            </div>
+            <div class="fmessage">
+              <p>Message</p>
+              <textarea name="" id="" cols="30" rows="10"></textarea>
+            </div>
+            <a href="#" class="btn text-white">Buy Now</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- thirteen content -->
+    <footer id="footer">
+      <div class="footer-top">
+        <div class="container">
+          <div class="row">
+  
+            <div class="col-lg-3 col-md-6 col-sm-6">
+              <div class="footer-info">
+                <h3>Scaffold</h3>
+                <p>
+                  A108 Adam Street <br>
+                  NY 535022, USA<br><br>
+                  <strong>Phone:</strong> +1 5589 55488 55<br>
+                  <strong>Email:</strong> info@example.com<br>
+                </p>
+                <div class="social-links mt-3 mb-sm-5">
+                  <a href="#" class="twitter rounded-pill"><i class="bi bi-twitter"></i></a>
+                  <a href="#" class="facebook rounded-pill"><i class="bi bi-facebook"></i></a>
+                  <a href="#" class="instagram rounded-pill"><i class="bi bi-instagram"></i></a>
+                  <a href="#" class="google-plus rounded-pill"><i class="bi bi-skype"></i></a>
+                  <a href="#" class="linkedin rounded-pill"><i class="bi bi-linkedin"></i></a>
+                </div>
+              </div>
+            </div>
+  
+            <div class="col-lg-2 col-md-6 footer-links col-sm-6">
+              <h4>Useful Links</h4>
+              <ul>
+                <li><i class="bi bi-chevron-right"></i> <a href="#">Home</a></li>
+                <li><i class="bi bi-chevron-right"></i> <a href="#">About us</a></li>
+                <li><i class="bi bi-chevron-right"></i> <a href="#">Services</a></li>
+                <li><i class="bi bi-chevron-right"></i> <a href="#">Terms of service</a></li>
+                <li><i class="bi bi-chevron-right"></i> <a href="#">Privacy policy</a></li>
+              </ul>
+            </div>
+  
+            <div class="col-lg-3 col-md-6 footer-links col-sm-6">
+              <h4>Our Services</h4>
+              <ul>
+                <li><i class="bi bi-chevron-right"></i> <a href="#">Web Design</a></li>
+                <li><i class="bi bi-chevron-right"></i></i> <a href="#">Web Development</a></li>
+                <li><i class="bi bi-chevron-right"></i></i> <a href="#">Product Management</a></li>
+                <li><i class="bi bi-chevron-right"></i></i> <a href="#">Marketing</a></li>
+                <li><i class="bi bi-chevron-right"></i></i> <a href="#">Graphic Design</a></li>
+              </ul>
+            </div>
+  
+            <div class="col-lg-4 col-md-6 footer-newsletter col-sm-6">
+              <h4>Our Newsletter</h4>
+              <p>Tamen quem nulla quae legam multos aute sint culpa legam noster magna</p>
+              <form action="" method="post">
+                <input type="email" name="email"><input type="submit" value="Subscribe" class="btn-primary rounded-end-5">
+              </form>
+  
+            </div>
+  
+          </div>
+        </div>
+      </div>
+  
+    </footer>
+    <div class="last text-center p-3">
+      <div class="copyright">
+        © Copyright <strong><span>Scaffold</span></strong>. All Rights Reserved
+      </div>
+      <div class="credits">
+        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+      </div>
+    </div>
+
+    <!-- script tags -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+              var swiper = new Swiper(".mySwiper", {
+                  pagination: {
+                      el: ".swiper-pagination",
+                  },
+              });
+
+            const div=document.querySelectorAll(".ele-div")
+            div.forEach(e=>{
+              let p=e.querySelector("p")
+              let i=e.querySelector("i")
+              e.addEventListener("click",(dets)=>{
+                $(document).ready(()=>{
+                  $(p).toggle(200)
+                  $(i).toggleClass("bi bi-chevron-up icon-show")
+                })
+              })
+              $(p).hide()
+            })
+            
+          new WOW().init();
+    </script>
+</body>
+</html>
