@@ -1,0 +1,112 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+body{
+    font-family: sans-serif;
+}
+.main{
+    background: url("./nathan-anderson-8fcWFnO3ZyA-unsplash.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height:57vh;
+    width: 100%;
+}
+.content{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 17rem;
+    color: white
+}
+.content h1{
+    font-size: 4rem;
+}
+.photos
+{
+    display: flex;
+    
+}
+.boxes{
+    width: 500px;
+    height: 300px;
+    background-color:#fff;
+}
+.box-3{
+    display: flex;
+}
+.child-1{
+    height: 150px;
+    width: 100%;
+    padding: 25px;
+    color: white;
+    background-color: red;
+}
+.child-2{
+    height: 150px;
+    width: 100%;
+}
+.child-1 h4{
+    margin-top: 1rem;
+}
+.child-1 p{
+    margin-top: 1rem;
+}
+.box1{
+    padding: 20px;
+    /* background-color: #aaa; */
+}
+.box1 h4{
+    margin-top: 1rem;
+}
+.box1 p{
+    margin-top: 2rem;
+    line-height: 2;
+}
+.box4{
+    background-color:black;
+    padding: 40px;
+    color: #fff;
+}
+.box4 h4{
+    margin-top: 1rem;
+}
+.box4 p{
+    margin-top: 1rem;
+    line-height: 2;
+}
+img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+i{
+    margin-right: 1rem;
+    font-size: 2rem;
+}
+
+@media (max-width:500px)
+{
+    .content{
+        padding: 3rem;
+        flex-direction: column;
+        align-items: flex-start;
+        text-align: justify;
+    }
+    .content p{
+        margin-top: 1.5rem;
+    }
+    .content .icons{
+        margin-top: 1.5rem;
+    }
+    .photos{
+        flex-direction: column;
+    }
+    .boxes{
+        width: 480px;
+    }
+}
