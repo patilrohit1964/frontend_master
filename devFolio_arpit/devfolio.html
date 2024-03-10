@@ -1,0 +1,914 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>rohit wrbsite</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <!-- link swiper -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+    <!-- link icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <!-- link css -->
+    <link rel="stylesheet" href="./scaffold.css">
+    <!-- jquery cdn -->
+    <script src="https://code.jquery.com/jquery-3.7.1.js"
+        integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    <!-- animate css link -->
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <script src="js/wow.min.js" defer></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #ddd;
+        }
+
+        nav {
+            z-index: 999;
+        }
+
+        nav li.nav-item a.text-white::after {
+            content: "";
+            display: block;
+            height: 2px;
+            width: 0px;
+            background-color: white;
+            transition: all 0.3s ease-in-out;
+        }
+
+        nav li.nav-item a.text-white:hover::after {
+            width: 40px;
+        }
+
+        nav li.nav-item:nth-child(6) li#dropdownnav:hover .deepul {
+            display: block;
+            margin-left: -170px;
+        }
+
+        /* first content design*/
+        .first-content {
+            background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("images/main_bg.jpg");
+            height: 690px;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-attachment: fixed;
+        }
+
+        .first-content-heading h1 {
+            font-size: 60px;
+            padding: 15rem 0 20px 0;
+        }
+
+        .first-content-heading h3 {
+            animation: cursoranim 1s linear infinite;
+        }
+
+        @keyframes cursoranim {
+            50% {
+                border-right: 1px solid rgba(0, 0, 0, 0);
+            }
+        }
+
+        /*second content */
+        .second-content {
+            padding: 60px 0;
+        }
+
+        .second-content .row .col-12 {
+            padding: 64px 48px;
+            box-shadow: 5px 5px 10px #aaa;
+        }
+
+        .second-content .row .col-12 .pr-img {
+            height: 150px;
+        }
+
+        .second-content .col-lg-5:last-child p {
+            font-size: 20px;
+        }
+
+        .second-content h2::after {
+            content: "";
+            display: block;
+            height: 5px;
+            width: 100px;
+            margin: 10px 0;
+            background-color: blue;
+        }
+
+        /*third content*/
+        .third-content .border-p::after,
+        .five-content p::after,
+        .seven-content .blog-p::after {
+            content: "";
+            display: block;
+            height: 5px;
+            width: 40px;
+            background-color: #0078ff;
+            margin: 16px auto;
+        }
+
+        .third-content .col-3-box {
+            width: 380px;
+            height: 400px;
+            margin: 8px auto 48px auto;
+            padding: 40px 20.8px;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 5px 5px 10px #aaa;
+        }
+
+        .third-content .col-3-circle {
+            height: 100px;
+            width: 100px;
+            border: 10px solid #007aff;
+            border-radius: 50%;
+            margin: 0 auto 16px auto;
+            font-size: 40px;
+            padding: 10px 0;
+            transition: all 0.1s ease-in-out;
+        }
+
+        .third-content .col-3-circle:hover {
+            background-color: #0d6efd;
+            outline: 10px solid rgba(135, 207, 235, 0.644);
+            color: white;
+        }
+
+        .third-content h3 {
+            margin: 30px 0;
+        }
+
+        /*fourth content */
+        .fourth-content {
+            height: 432px;
+            position: relative;
+            background: url("./images/counter_img.jpg");
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+
+        .fourth-content .container {
+            position: relative;
+            z-index: 888;
+            padding: 8rem;
+            height: 100%;
+        }
+
+        .fourth-content::after {
+            content: "";
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(35, 35, 255, 0.605);
+        }
+
+        .fourth-content .fourth-circle {
+            width: 80px;
+            height: 80px;
+            border: 8px solid #dee2e6;
+            border-radius: 50%;
+            margin: auto;
+            padding: 8px;
+            font-size: 32px;
+        }
+
+        .fourth-content .row .col-lg-3 p {
+            font-size: 32px;
+        }
+
+        .fourth-content .row .col-lg-3 span {
+            font-size: 16px;
+        }
+
+        /* five content*/
+        .five-content {
+            padding: 64px;
+        }
+
+        .five-content p {
+            margin-bottom: 64px;
+        }
+
+        .five-content img {
+            transition: all 0.4s ease-in-out;
+        }
+
+        .five-content img:hover {
+            transform: scale(1.1);
+        }
+
+        .five-content .card-body:last-child i {
+            position: absolute;
+            right: 20px;
+            font-size: 30px;
+            bottom: 20px;
+            border: 3px solid rgb(0, 120, 255);
+            border-radius: 50%;
+            padding: 0 8px;
+            color: rgb(0, 120, 255);
+        }
+
+        /* six content*/
+        .six-content {
+            height: 600px;
+            background: url("./images/slide_bg_img.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            position: relative;
+        }
+
+        .six-content .container {
+            position: relative;
+            z-index: 888;
+            top: 30%;
+        }
+
+        .six-content::after {
+            content: "";
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(35, 35, 255, 0.605);
+        }
+
+        .six-content .container .carousel-inner {
+            width: 50%;
+            margin: auto;
+        }
+
+        .six-content .container h2 {
+            font-size: 22px;
+            margin: 16px 0;
+        }
+
+        .six-content .container p {
+            font-size: 20px;
+            margin: 0 0 16px;
+        }
+
+        /*seven content */
+        .seven-content {
+            padding: 64px 0;
+        }
+
+        .seven-content .card-body {
+            padding: 16px;
+        }
+
+        .seven-content h3 {
+            margin: 9px 0;
+        }
+
+        .seven-content .card-body p {
+            margin-bottom: 16px;
+        }
+
+        .seven-content .card-body span.blog-ab {
+            position: absolute;
+            background-color: #0078ff;
+            color: white;
+            top: 44%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            padding: 0 15px 5px;
+            border-radius: 2px;
+        }
+
+        /* Eight content*/
+        .eight-content {
+            background: linear-gradient(rgba(35, 35, 255, 0.605), rgba(35, 35, 255, 0.605)), url("./images/slide_bg_img.jpg");
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            padding: 100px 0;
+        }
+
+        .eight-content .container {
+            padding: 48px;
+        }
+
+        .eight-content .container input {
+            display: block;
+            width: 498px;
+            padding: 10px 15px;
+            outline: none;
+            margin-bottom: 16px;
+        }
+
+        .eight-content .container textarea {
+            display: block;
+            width: 498px;
+            height: 130px;
+            padding: 10px 15px;
+            outline: none;
+        }
+
+        .eight-content h5::after {
+            content: "";
+            display: block;
+            height: 4px;
+            width: 100px;
+            background-color: #0078ff;
+            margin: 16px 0;
+        }
+
+        .eight-content button {
+            padding: 10px 24px;
+            width: 170px;
+            margin: 2rem 10rem;
+        }
+
+        .eight-content .eight-big-p {
+            font-size: 20px;
+            margin: 30px 0;
+        }
+
+        .eight-content .social-icons span {
+            border: 3px solid #0078ff;
+            display: inline-block;
+            margin-right: 15px;
+            padding: 5px 12px;
+            font-size: 20px;
+            transition: all 0.5s ease-in-out;
+        }
+
+        .eight-content .social-icons span:hover {
+            background-color: rgb(0, 183, 255);
+            outline: 3px solid rgba(77, 197, 244, 0.762);
+            color: white;
+        }
+
+        .eight-content .social-icons span:hover a i {
+            color: white;
+        }
+
+        /* footer*/
+        footer {
+            background-color: #0062d3;
+            padding: 25px 0;
+            font-size: 16px;
+            position: relative;
+        }
+
+        .topper {
+            font-size: 30px;
+            background: #000;
+            color: white;
+        }
+
+       
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg bg-dark position-fixed w-100 navbar-light">
+        <div class="container">
+            <a href="" class="navbar-brand text-white">DevFolio</a>
+            <button class="navbar-toggler bg-white" data-bs-toggle="offcanvas" data-bs-target="#offRight">
+                <span class="navbar-toggler-icon text-dark"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbar">
+                <ul class="navbar-nav m-auto text-sm-center">
+                    <li class="nav-item ms-3"><a href="#" class="nav-link text-white">HOME</a></li>
+                    <li class="nav-item ms-3"><a href="#" class="nav-link text-white">ABOUT</a></li>
+                    <li class="nav-item ms-3"><a href="#" class="nav-link text-white">SERVICES</a></li>
+                    <li class="nav-item ms-3"><a href="#" class="nav-link text-white">WORK</a></li>
+                    <li class="nav-item ms-3"><a href="#" class="nav-link text-white">BLOG</a></li>
+                    <li class="nav-item ms-3 dropdown">
+                        <a href="" class="nav-link dropdown-toggle text-white" id="dropdownnav"
+                            data-bs-toggle="dropdown">DROPDOWN <i class="bi bi-caret-down-fill"></i></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="" class="dropdown-item">Drop Down 1</a></li>
+                            <li class="dropdown1" id="dropdownnav">
+                                <a href="" class="dropdown-item dropdown-toggle" data-bs-toggle="dropdown1">Deep Drop
+                                    Down</a>
+                                <ul class="dropdown-menu deepul">
+                                    <li><a href="" class="dropdown-item">Deep Drop Down 1</a></li>
+                                    <li><a href="" class="dropdown-item">Deep Drop Down 2</a></li>
+                                    <li><a href="" class="dropdown-item">Deep Drop Down 3</a></li>
+                                    <li><a href="" class="dropdown-item">Deep Drop Down 4</a></li>
+                                    <li><a href="" class="dropdown-item">Deep Drop Down 5</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="" class="dropdown-item">Drop Down 2</a></li>
+                            <li><a href="" class="dropdown-item">Drop Down 3</a></li>
+                            <li><a href="" class="dropdown-item">Drop Down 4</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item"><a href="" class="nav-link text-white">CONTACT</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- offcanas -->
+    <button class="btn" data-bs-toggle="offcanvas" data-bs-target="#offcanvas"></button>
+    <div class="offcanvas offcanvas-end bg-secondary" tabindex="-1" id="offRight">
+        <div class="offcanvas-header text-white">
+            <h5 id="offrightlabel">Menu</h5>
+            <button class="btn-close text-reset" data-bs-dismiss="offcanvas"></button>
+        </div>
+        <div class="offcanvas-body">
+            <ul class="navbar-nav m-auto">
+                <li class="nav-item ms-3"><a href="#" class="nav-link text-white">HOME</a></li>
+                <li class="nav-item ms-3"><a href="#" class="nav-link text-white">ABOUT</a></li>
+                <li class="nav-item ms-3"><a href="#" class="nav-link text-white">SERVICES</a></li>
+                <li class="nav-item ms-3"><a href="#" class="nav-link text-white">WORK</a></li>
+                <li class="nav-item ms-3"><a href="#" class="nav-link text-white">BLOG</a></li>
+                <li class="nav-item ms-3 dropdown">
+                    <a href="" class="nav-link dropdown-toggle text-white" id="dropdownnav"
+                        data-bs-toggle="dropdown">DROPDOWN</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="" class="dropdown-item">Drop Down 1</a></li>
+                        <li class="dropdown1" id="dropdownnav">
+                            <a href="" class="dropdown-item dropdown-toggle" data-bs-toggle="dropdown1">Deep Drop
+                                Down</a>
+                            <ul class="dropdown-menu deepul dropdown1">
+                                <li><a href="" class="dropdown-item">Deep Drop Down 1</a></li>
+                                <li><a href="" class="dropdown-item">Deep Drop Down 2</a></li>
+                                <li><a href="" class="dropdown-item">Deep Drop Down 3</a></li>
+                                <li><a href="" class="dropdown-item">Deep Drop Down 4</a></li>
+                                <li><a href="" class="dropdown-item">Deep Drop Down 5</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="" class="dropdown-item">Drop Down 2</a></li>
+                        <li><a href="" class="dropdown-item">Drop Down 3</a></li>
+                        <li><a href="" class="dropdown-item">Drop Down 4</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item ms-3"><a href="" class="nav-link text-white">CONTACT</a></li>
+            </ul>
+        </div>
+    </div>
+    <!-- offcanvas end -->
+    <div class="first-content text-white text-center">
+        <div class="first-content-heading">
+            <h1>I am Morgan Freeman</h1>
+            <h2><span id="changingText"></span></h2>
+        </div>
+    </div>
+    <!-- second content -->
+    <div class="second-content">
+        <div class="container bg-white">
+            <div class="row">
+                <div class="col-12">
+                    <div class="row justify-content-around">
+                        <div class="col-lg-5 col-sm-12">
+                            <div class="profile d-flex justify-content-around flex-wrap">
+                                <div class="pr-img rounded overflow-hidden"><img src="./images/sec1_img.jpg" alt="">
+                                </div>
+                                <div class="pr-about">
+                                    <span><b>Name</b> Morgan Freeman</span><br>
+                                    <span><b>Profile</b> full stack developer</span><br>
+                                    <span><b>Email</b> abc@gmail.com</span><br>
+                                    <span><b>Phone</b> (617) 557-0089</span>
+                                </div>
+                            </div>
+                            <div class="skill ms-5 mt-5 ms-sm-2 mt-sm-5">
+                                <h5>Skill</h5>
+                                <div class="progress1 mt-3">
+                                    <p class="m-2">Html 85%</p>
+                                    <div class="progress">
+                                        <div class="progress-bar" role="progressbar" style="width:85%"
+                                            aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+                                </div>
+                                <div class="progress1 mt-3">
+                                    <p class="m-2">Css 75%</p>
+                                    <div class="progress">
+                                        <div class="progress-bar" role="progressbar" style="width:75%"
+                                            aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+                                </div>
+                                <div class="progress1 mt-3">
+                                    <p class="m-2">Python 50%</p>
+                                    <div class="progress">
+                                        <div class="progress-bar" role="progressbar" style="width:50%"
+                                            aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+                                </div>
+                                <div class="progress1 mt-3">
+                                    <p class="m-2">Javascript 90%</p>
+                                    <div class="progress">
+                                        <div class="progress-bar" role="progressbar" style="width:90%"
+                                            aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-5 text-justify col-sm-12 mt-sm-5 mt-lg-0">
+                            <h2>About Me</h2>
+                            <p class="text-secondary mb-5 mt-3">Curabitur non nulla sit amet nisl tempus convallis quis
+                                ac lectus. Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Praesent
+                                sapien massa, convallis a pellentesque nec, egestas non nisi. Nulla porttitor accumsan
+                                tincidunt.</p>
+                            <p class="text-secondary mb-5">Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a.
+                                Vivamus suscipit tortor eget felis porttitor volutpat. Vestibulum ac diam sit amet quam
+                                vehicula elementum sed sit amet dui. porttitor at sem.</p>
+                            <p class="text-secondary mb-5">Nulla porttitor accumsan tincidunt. Quisque velit nisi,
+                                pretium ut lacinia in, elementum id enim. Nulla porttitor accumsan tincidunt. Mauris
+                                blandit aliquet elit, eget tincidunt nibh pulvinar a.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- third content -->
+    <div class="third-content">
+        <h1 class="text-center"><b>SERVICES</b></h1>
+        <p class="text-center border-p">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+        <div class="container text-center">
+            <div class="third-content d-flex flex-wrap justify-content-between">
+                <div class="col-3-box">
+                    <div class="col-3-circle"><i class="bi bi-briefcase"></i></div>
+                    <div class="col-3-content">
+                        <h3 class="mb-1">WEB DESIGN</h3>
+                        <p class="mb-2 mt-sm-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni adipisci
+                            eaque autem fugiat! Quia, provident vitae! Magni tempora perferendis eum non provident</p>
+                    </div>
+                </div>
+                <div class="col-3-box">
+                    <div class="col-3-circle"><i class="bi bi-card-checklist"></i></div>
+                    <div class="col-3-content">
+                        <h3 class="mb-1">WEB DEVELOPMENT</h3>
+                        <p class="mb-2 mt-sm-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni adipisci
+                            eaque autem fugiat! Quia, provident vitae! Magni tempora perferendis eum non provident</p>
+                    </div>
+                </div>
+                <div class="col-3-box">
+                    <div class="col-3-circle"><i class="bi bi-bar-chart"></i></div>
+                    <div class="col-3-content">
+                        <h3 class="mb-1">PHOTOGRAPHY</h3>
+                        <p class="mb-2 mt-sm-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni adipisci
+                            eaque autem fugiat! Quia, provident vitae! Magni tempora perferendis eum non provident</p>
+                    </div>
+                </div>
+                <div class="col-3-box">
+                    <div class="col-3-circle"><i class="bi bi-binoculars"></i></div>
+                    <div class="col-3-content">
+                        <h3 class="mb-1">RESPONSIVE DESIGN</h3>
+                        <p class="mb-2 mt-sm-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni adipisci
+                            eaque autem fugiat! Quia, provident vitae! Magni tempora perferendis eum non provident</p>
+                    </div>
+                </div>
+                <div class="col-3-box">
+                    <div class="col-3-circle"><i class="bi bi-brightness-high"></i></div>
+                    <div class="col-3-content">
+                        <h3 class="mb-2 mt-sm-4">GRAPHIC DESIGN</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni adipisci eaque autem fugiat!
+                            Quia, provident vitae! Magni tempora perferendis eum non provident</p>
+                    </div>
+                </div>
+                <div class="col-3-box">
+                    <div class="col-3-circle"><i class="bi bi-calendar4-week"></i></div>
+                    <div class="col-3-content">
+                        <h3 class="mb-1">MARKETING SERVICES</h3>
+                        <p class="mb-2 mt-sm-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni adipisci
+                            eaque autem fugiat! Quia, provident vitae! Magni tempora perferendis eum non provident</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- fourth content -->
+    <div class="fourth-content">
+        <div class="container text-white p-sm-5">
+            <div class="row text-center mt-lg-5">
+                <div class="col-lg-3 col-sm-6 mb-sm-4">
+                    <div class="fourth-circle"><i class="bi bi-check"></i></div>
+                    <p class="m-1" data-count="450">0</p>
+                    <span>WORKS COMPLETED</span>
+                </div>
+                <div class="col-lg-3 col-sm-6">
+                    <div class="fourth-circle"><i class="bi bi-journal-richtext"></i></div>
+                    <p class="m-1" data-count="25">0</p>
+                    <span>YEARS OF EXPERIENCE</span>
+                </div>
+                <div class="col-lg-3 col-sm-6">
+                    <div class="fourth-circle"><i class="bi bi-people"></i></div>
+                    <p class="m-1" data-count="550">0</p>
+                    <span>TOTAL CLIENTS</span>
+                </div>
+                <div class="col-lg-3 col-sm-6">
+                    <div class="fourth-circle"><i class="bi bi-award"></i></div>
+                    <p class="m-1" data-count="48">0</p>
+                    <span>AWARD WON</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- five content -->
+    <div class="five-content">
+        <div class="container">
+            <h1 class="text-center">PORTFOLIO</h1>
+            <p class="text-center">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+            <div class="row flex-wrap">
+                <div class="col-lg-4 mb-5 col-sm-12 col-md-6">
+                    <div class="card rounded overflow-hidden">
+                        <img src="./images/mobile_img.jpg" alt="">
+                        <div class="card-body">
+                            <h5 class="card-title">Lorem impsum dolor</h5>
+                            <span class="card-text"><a href="" class="text-decoration-none">Web Design </a>/ 18
+                                Sep,2018</span>
+                            <span><i class="bi bi-plus-lg"></i></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-12 mb-sm-5 col-md-6">
+                    <div class="card rounded overflow-hidden">
+                        <img src="./images/table_img.jpg" alt="">
+                        <div class="card-body">
+                            <h5 class="card-title">Loreda Cuno Nere</h5>
+                            <span class="card-text"><a href="" class="text-decoration-none">Web Design </a>/18
+                                Sep,2018</span>
+                            <span><i class="bi bi-plus-lg"></i></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-12 mb-sm-5 col-md-6">
+                    <div class="card rounded overflow-hidden">
+                        <img src="./images/laptop_img.jpg" alt="">
+                        <div class="card-body">
+                            <h5 class="card-title">Mavrito Lana Dere</h5>
+                            <span class="card-text"><a href="" class="text-decoration-none">Web Design </a>/ 18
+                                Sep,2018</span>
+                            <span><i class="bi bi-plus-lg"></i></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-12 mb-sm-5 col-md-6">
+                    <div class="card rounded overflow-hidden">
+                        <img src="./images/cup_img.jpg" alt="">
+                        <div class="card-body">
+                            <h5 class="card-title">Bindo Laro Cado</h5>
+                            <span class="card-text"><a href="" class="text-decoration-none">Web Design </a>/ 18
+                                Sep,2018</span>
+                            <span><i class="bi bi-plus-lg"></i></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-12 mb-sm-5 col-md-6">
+                    <div class="card rounded overflow-hidden">
+                        <img src="./images/flower_img.jpg" alt="">
+                        <div class="card-body">
+                            <h5 class="card-title">Studio Lena Mado</h5>
+                            <span class="card-text"><a href="" class="text-decoration-none">Web Design </a>/ 18
+                                Sep,2018</span>
+                            <span><i class="bi bi-plus-lg"></i></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-12 mb-sm-5 col-md-6">
+                    <div class="card rounded overflow-hidden">
+                        <img src="./images/book_img.jpg" alt="">
+                        <div class="card-body">
+                            <h5 class="card-title">Studio Big Bang</h5>
+                            <span class="card-text"><a href="" class="text-decoration-none">Web Design </a>/ 18
+                                Sep,2018</span>
+                            <span><i class="bi bi-plus-lg"></i></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- six content -->
+    <div class="six-content">
+        <div class="container text-white">
+            <div class="carousel slide text-center w-sm-100" id="carouselEx" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="carousel-img overflow-hidden">
+                            <img src="./images/slide_girl_img.jpg" alt="" class="rounded-pill">
+                        </div>
+                        <div class="carousel-content">
+                            <h2>MARTA SOCRATE</h2>
+                            <p> Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Lorem ipsum dolor sit
+                                amet, consectetur adipiscing elit.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="carousel-img">
+                            <img src="./images/sec1_img.jpg" alt="" class="rounded-pill">
+                        </div>
+                        <div class="carousel-content">
+                            <h2>XAVI ALONSO</h2>
+                            <p> Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Lorem ipsum dolor sit
+                                amet, consectetur adipiscing elit.</p>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" data-bs-target="#carouselEx" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                    <span class="visually-hidden"></span>
+                </button>
+                <button class="carousel-control-next" data-bs-target="#carouselEx" data-bs-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                    <span class="visually-hidden"></span>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- seven content -->
+    <div class="seven-content">
+        <div class="container">
+            <h1 class="text-center">BLOG</h1>
+            <p class="text-center blog-p">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+            <div class="row pt-5">
+                <div class="col-lg-3 card h-100 m-auto p-0 rounded col-sm-12 mb-sm-5 col-md-5 order-md-3 order-lg-1">
+                    <img src="./images/blog_1_img.jpg" alt="" class="card-img-top">
+                    <div class="card-body">
+                        <span class="blog-ab d-sm-none d-lg-block">Travel</span>
+                        <h3 class="card-title"><a href="" class="text-decoration-none text-dark">See more ideas about
+                                Travel</a></h3>
+                        <p class="card-text text-secondary">Proin eget tortor risus. Pellentesque in ipsum id orci porta
+                            dapibus. Praesent sapien massa, convallis a pellentesque nec, egestas non nisi.</p>
+                    </div>
+                    <div class="card-footer">
+                        <small class="text-muted d-flex align-items-center justify-content-between">
+                            <span>
+                                <img src="./images/sec1_img.jpg" alt="" height="30px" width="30px"
+                                    class="rounded-pill">&nbsp;&nbsp;&nbsp;&nbsp;Morgan Freeman
+                            </span>
+                            <span><i class="bi bi-stopwatch"></i>&nbsp;&nbsp;10 min</span>
+                        </small>
+                    </div>
+                </div>
+                <div class="col-lg-3 card h-100 m-auto p-0 rounded col-sm-12 mb-sm-5 col-md-5 order-md-3 order-lg-2">
+                    <img src="./images/blog_2_img.jpg" alt="" class="card-img-top">
+                    <div class="card-body">
+                        <span class="blog-ab d-sm-none d-lg-block">Web Design</span>
+                        <h3 class="card-title"><a href="" class="text-decoration-none text-dark">See more ideas about
+                                Travel</a></h3>
+                        <p class="card-text text-secondary">Proin eget tortor risus. Pellentesque in ipsum id orci porta
+                            dapibus. Praesent sapien massa, convallis a pellentesque nec, egestas non nisi.</p>
+                    </div>
+                    <div class="card-footer">
+                        <small class="text-muted d-flex justify-content-between align-items-center">
+                            <span>
+                                <img src="./images/sec1_img.jpg" alt="" height="30px" width="30px"
+                                    class="rounded-pill">&nbsp;&nbsp;&nbsp;&nbsp;Morgan Freeman
+                            </span>
+                            <span><i class="bi bi-stopwatch"></i>&nbsp;&nbsp;10 min</span>
+                        </small>
+                    </div>
+                </div>
+                <div class="col-lg-3 card h-100 m-auto p-0 rounded col-sm-12 mb-sm-5 order-md-1 order-lg-3">
+                    <img src="./images/counter_img.jpg" alt="" class="card-img-top" height="220px">
+                    <div class="card-body">
+                        <span class="blog-ab d-sm-none d-lg-block">Web Design</span>
+                        <h3 class="card-title"><a href="" class="text-decoration-none text-dark">See more ideas about
+                                Travel</a></h3>
+                        <p class="card-text text-secondary">Proin eget tortor risus. Pellentesque in ipsum id orci porta
+                            dapibus. Praesent sapien massa, convallis a pellentesque nec, egestas non nisi.</p>
+                    </div>
+                    <div class="card-footer">
+                        <small class="text-muted d-flex justify-content-between align-items-center">
+                            <span>
+                                <img src="./images/sec1_img.jpg" alt="" height="30px" width="30px"
+                                    class="rounded-pill">&nbsp;&nbsp;&nbsp;&nbsp;Morgan Freeman
+                            </span>
+                            <span><i class="bi bi-stopwatch"></i>&nbsp;&nbsp;10 min</span>
+                        </small>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- eight content -->
+    <div class="eight-content">
+        <div class="container bg-white p-sm-4 p-md-5">
+            <div class="row">
+                <div class="col-lg-6 col-sm-12">
+                    <h5 class="mb-5">Send Message Us</h5>
+                    <div class="inputs">
+                        <input type="text" placeholder="Name">
+                        <input type="text" placeholder="Your Email">
+                        <input type="text" placeholder="Subject">
+                        <textarea name="" id="" cols="30" rows="10" placeholder="Message"></textarea>
+                        <button class="btn btn-primary rounded-pill">Send Message</button>
+                    </div>
+                </div>
+                <div class="col-lg-6 mb-5 col-sm-12">
+                    <h5>Get in Touch</h5>
+                    <p class="text-secondary eight-big-p">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Facilis dolorum dolorem soluta quidem expedita aperiam aliquid at. Totam magni ipsum suscipit
+                        amet? Autem nemo esse laboriosam ratione nobis mollitia inventore?</p>
+                    <p class="text-secondary"><i class="bi bi-geo-alt text-primary"></i> 329 WASHINGTON ST BOSTON, MA
+                        02108</p>
+                    <p class="text-secondary"><i class="bi bi-phone text-primary"></i> (617) 557-0089</p>
+                    <p class="text-secondary"><i class="bi bi-envelope text-primary"></i> contact@example.com</p>
+                    <div class="social-icons mt-lg-4">
+                        <span class="rounded-pill"><a href="#" class="text-dark"><i
+                                    class="bi bi-facebook"></i></a></span>
+                        <span class="rounded-pill"><a href="#" class="text-dark"><i
+                                    class="bi bi-instagram"></i></a></span>
+                        <span class="rounded-pill"><a href="#" class="text-dark"><i
+                                    class="bi bi-twitter"></i></a></span>
+                        <span class="rounded-pill"><a href="#" class="text-dark"><i
+                                    class="bi bi-linkedin"></i></a></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="text-center text-white">
+        <p>&copy; copyright <b>DevFolio.</b> All Rights Reserved <br>Designed by Rp_Blazzer</p>
+    </footer>
+    <script>
+        $('.fourth-content p').each(function () {
+            var $this = $(this),
+                countTo = $this.attr('data-count');
+
+            $({ countNum: $this.text() }).animate({
+                countNum: countTo
+            },
+
+                {
+
+                    duration: 3000,
+                    easing: 'linear',
+                    step: function () {
+                        $this.text(Math.floor(this.countNum));
+                    },
+                    complete: function () {
+                        $this.text(this.countNum);
+                    }
+                });
+        });
+        //you can change the text, but you need to keep same format [yourtext, color];
+        let yourtext = [
+            ["Developer", "#fff"],
+            ["Designer", "#fff"],
+            ["Freelancer", "#fff"],
+            ["Photography", "#fff"]
+        ];
+
+        let x = 0;
+        let y = 0;
+        //how fast typing is
+        let wait = 350;
+        //how long you want to text stay before overwriting
+        let additionalwait = 5;
+        let txt = yourtext[0][0].split("");
+        let out = "";
+        let retyping = setInterval(function () {
+            document.getElementById("changingText").innerHTML = out;
+            if (x > txt.length - 1) {
+                //empty
+            } else {
+                out += txt[x];
+            }
+            x++;
+            if (x == txt.length + 2 + additionalwait) {
+                if (y == yourtext.length - 1) {
+                    y = 0;
+                    txt = yourtext[y][0].split("");
+                    out = "";
+                    document.getElementById("changingText").innerHTML = out;
+                    document.getElementById("changingText").style.color = yourtext[y][1];
+                    x = 0;
+                } else {
+                    y += 1;
+                    txt = yourtext[y][0].split("");
+                    out = "";
+                    document.getElementById("changingText").innerHTML = out;
+                    document.getElementById("changingText").style.color = yourtext[y][1];
+                    x = 0;
+                }
+            }
+        }, wait);
+    </script>
+</body>
+
+</html>
