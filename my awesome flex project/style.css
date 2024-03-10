@@ -1,0 +1,169 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: sans-serif;
+    overflow: hidden;
+}
+
+.main-box{
+    display: flex;
+    color: white;
+}
+.box{
+    width: 23%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    flex-grow: 0;
+    padding:8px 20px;
+}
+.box:hover h1{
+    transform: rotate(0);
+}
+h1{
+    transform: rotate(90deg);
+    margin-top: 4rem;
+    transition: all 0.7s ease-in-out;
+    text-align: center;
+    transform-origin:0 100% ;
+}
+.box1{  
+    background-image:url(./flex_images/omar-ram--MEA6y45nsk-unsplash.jpg) ;
+    height: 100vh;
+    transition: all 0.5s ease-in-out;
+    position: relative;
+    transition: all 0.5s ease-in-out;
+}
+.box1:hover{
+    flex-grow:2;
+}
+.box1-child{
+    border: 2px solid white;
+    padding:28px 12px;
+    position: absolute;
+    top: 23%;
+    border-radius: 10px;
+    transition: all 0.5s ease-in-out;
+    opacity: 0;
+    left: 20%;
+}
+.box:hover .box1-child{
+    opacity: 1;
+}
+.box2{
+    background-image:url(./flex_images/fox_black.jpg) ;
+    height: 100vh;
+    transition: all 0.5s ease-in-out;
+    position: relative;
+}
+.box2:hover{
+    flex-grow:2;
+}
+.box3{
+    background-image:url(./flex_images/good_black.jpeg) ;
+    height: 100vh;
+    transition: all 0.5s ease-in-out;
+    position: relative;
+}
+.box3:hover{
+    flex-grow:2;
+}
+.box3 .lists{
+    position: absolute;
+    height:170px;
+    margin-top: 4rem;
+    border: 2px solid white;
+    border-radius: 8px;
+    padding: 5px 20px;
+    transition: all 0.5s ease-in-out;
+    left: 20%;
+    opacity: 0;
+}
+.box3:hover .lists
+{
+    opacity: 1;
+}
+.box3 p{
+    margin-top: 2rem;
+}
+ul{
+    margin-top: 1.5rem;
+    margin-left: 1rem;
+}
+/* box 4 styling  */
+.box4{
+    background-image: url(./flex_images/maxence-pira-_mn2g39gkNo-unsplash.jpg);
+    height: 100vh;
+    transition: all 0.5s ease-in-out;
+    position: relative;
+}
+.box4:hover{
+    flex-grow:2;
+}
+.contact-child{
+    position: absolute;
+    margin-top: 4rem;
+    height: 300px;
+    width: 310px;
+    border: 2px solid white;
+    border-radius: 8px;
+    padding: 8px 18px;
+    left: 7%;
+    text-align: left;
+    opacity: 0;
+    transform: rotate(45deg);
+    transition: all 0.6s ease-in-out;
+    transform-origin: 100% 0%;
+}
+
+
+.box4:hover .contact-child{
+    opacity: 1;
+    left: 18%;
+    transform: rotate(0);
+}
+.box4 p{
+    margin: 1.5rem 0 1.5rem 0;
+}
+
+a{
+    display: inline-block;
+    padding: 5px 10px;
+    color: black;
+    background-color: white;
+    text-align: center;
+    text-decoration:none;
+    font-size: 12px;
+    width: 90%;
+    margin-top: 2rem;
+    border-radius: 5px;
+}
+.contact-child label:last-of-type{
+    display: inline-block;
+    margin-top:1.4rem;
+}
+input{
+    width: 90%;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+
+@media (max-width:500px)
+{
+    .main-box{
+        flex-direction: column;
+    }
+    .box{
+        width: 100vh;
+        text-align: center;
+    }
+    .box{
+        flex-grow: 2;
+    }
+}

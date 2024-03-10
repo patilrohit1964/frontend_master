@@ -1,0 +1,79 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: black;
+}
+
+.inner-orbit{
+    height: 500px;
+    width:500px;
+    border-radius: 50%;
+    border: 2px dashed orange;
+    position: relative;
+    left: 35%;
+    transform: translateY(40%);
+    margin-top: 4rem;
+    animation: rp 13s both 0.1s infinite linear;
+}
+.inner-orbit-circle{
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: aqua;
+    top: 30%;
+}
+
+.middle-orbit
+{
+    height: 400px;
+    width:400px;
+    border-radius: 50%;
+    border: 2px dashed orange;
+    position: absolute;
+    left: 38%;
+    top:15%;
+    /* margin-top: 4rem; */
+    animation: rp 15s both 0.1s infinite linear;
+}
+.middle-orbit-circle{
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: purple;
+    top: 30%;
+}
+.outer-orbit{
+    height: 300px;
+    width:300px;
+    border-radius: 50%;
+    border: 2px dashed orange;
+    position: absolute;
+    left: 41.5%;
+    top:14%;
+    margin-top: 4rem;
+    animation: rp 17s both 0.1s infinite linear;
+}
+.outer-orbit-circle{
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color:plum;
+    top: 30%;
+    left: 1%;
+}
+@keyframes rp{
+    from
+    {
+        transform: rotate(0deg);
+    }
+   to{
+        transform: rotate(360deg);
+   }
+}

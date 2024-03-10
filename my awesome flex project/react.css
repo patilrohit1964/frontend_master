@@ -1,0 +1,67 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    --color:skyblue;
+}
+body{
+    background: #000;
+}
+.box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 15rem;
+}
+.circle{
+    display: block;
+    height: 45px;
+    width: 45px;
+    background-color: skyblue;
+    border-radius: 50%;
+    margin-top: 0.2rem;
+    margin-left: 0.8rem;
+}
+.react{
+    position: absolute;
+    display: block;
+    height: 270px;
+    width: 80px;
+    border: 8px solid var(--color);
+    left: 47.5%;
+    border-radius: 100%;
+    transform: rotate(90deg);
+    top: 17.5%;
+    /* animation: react 2s forwards 0.2s infinite ease-in-out; */
+}
+.react::before,.react::after{
+    content: "";
+    position: absolute;
+    display: block;
+    height: 270px;
+    width: 80px;
+    border: 8px solid var(--color);
+    border-radius: 100%;
+}
+.react::before{
+    top: -8%;
+    transform: rotate(48deg);
+    left: -40%;
+    /* animation: react 2s forwards 0.2s infinite ease-in-out; */
+}
+.react::after{
+    top: -8%;
+    left:-40%;
+    transform: rotate(-48deg); 
+    animation: react2 2s forwards 0.2s infinite ease-in-out;
+}
+@keyframes react{
+    100%{
+        transform: rotate(360deg);
+    }
+}
+/* @keyframes react2{
+    100%{
+        transform: rotate(-360deg);
+    }
+} */
