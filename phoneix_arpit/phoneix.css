@@ -1,0 +1,122 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #ddd;
+}
+
+nav {
+    z-index: 9999;
+}
+nav .nav-info{
+    font-size: 20px;
+    width: 150px;
+}
+nav .nav-search i{
+    position: absolute;
+    left: 38%;
+    top: 30%;
+}
+nav input{
+    outline: none;
+    padding:2px 12px;
+    width: 400px;
+    border-radius: 10px;
+    
+}
+aside {
+    height: 94vh;
+    width: 20vw;
+    position: fixed;
+    top: 7%;
+    padding: 18px;
+    cursor: pointer;
+    overflow-y: scroll;
+    z-index: 999;
+}
+aside .collapsed-view{
+    position: absolute;
+    border: 2px solid #ddd;
+    width: 100%;
+    left: 0;
+    bottom: 12px;
+    padding: 10px 24px;
+}
+
+main {
+    width: 80vw;
+    margin-left: auto;
+    padding: 96px 50px;
+}
+
+/* third content*/
+.third-content .col-5 {
+    padding: 24px;
+}
+
+.third-content .third-graph {
+    padding: 40px 24px;
+}
+
+/* fourth content*/
+.fourth-content {
+    width: 80vw;
+    margin-left: auto;
+    padding: 48px 40px 0;
+    position: relative;
+    z-index: 222;
+}
+.fourth-content .row .col-6:first-child{
+    padding-bottom: 32px;
+}
+.fourth-content input{
+    display: inline-block;
+    padding: 6px 32px 6px 40px;
+}
+.fourth-content input::placeholder{
+    text-align: center;
+}
+.fourth-content .row .col-6:last-child i{
+    position: absolute;
+    top: 85px;
+    left: 52%;
+}
+.fourth-content table{
+    width: 200%;
+}
+/* five content */
+.five-content{
+    width: 80vw;
+    margin-left: auto;
+}
+.five-content .row{
+    padding:0 40px;
+}
+.five-content .row .col-6:first-child{
+    padding:0 20px;
+}
+.five-content table{
+    height: 100%;
+}
+/* six content */
+.six-content{ 
+    width: 80vw;
+    margin-left: auto;
+}
+.six-content .row{
+    padding:40px 40px 64px 40px;
+}
+
+/* footer */
+.footer{
+    width: 80vw;
+    margin-left: auto;
+    padding: 20px 40px;
+}
+
+::-webkit-scrollbar{
+    width: 0;
+}

@@ -1,0 +1,1490 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>rohit wrbsite</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+            integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+            crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+        <!-- link swiper -->
+        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+        <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+        <!-- link icons -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <!-- link css -->
+        <link rel="stylesheet" href="./scaffold.css">
+        <!-- jquery cdn -->
+        <script src="https://code.jquery.com/jquery-3.7.1.js"
+            integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+        <!-- animate css link -->
+        <link rel="stylesheet" href="css/animate.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+        <script src="js/wow.min.js" defer></script>
+        <!-- chart js -->
+        <script src="https://cdn.syncfusion.com/ej2/dist/ej2.min.js" type="text/javascript"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/protonet-jquery.inview/1.1.2/jquery.inview.min.js"></script>    
+        <!-- style css -->
+        <link rel="stylesheet" href="./phoneix.css">
+    </head>
+<body>
+    <nav class="navbar navbar-light bg-light ps-5 pe-5 position-fixed top-0 w-100 navbar-expand-lg d-flex justify-content-between">
+        <button class="btn btn-primary d-sm-block d-lg-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBackdrop" aria-controls="offcanvasScrolling">Menu</button>
+        <a href="#" class="navbar-brand h1"><img src="./images/logo_phoneix.png" alt="" height="27px" width="27px"> Phoenix</a>
+        <button class="navbar-toggler" data-bs-toggle="offcanvas" data-bs-target="#offcanvasBottom">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="nav-search d-lg-block ms-auto d-sm-none d-md-none">
+            <i class="bi bi-search text-secondary"></i>
+            <input type="text" class="text-center" placeholder="Search...">
+        </div>
+        <div class="nav-info ms-auto d-lg-flex justify-content-between align-items-center d-sm-none d-md-none">
+            <span class="rounded rounded-circle"><i class="bi bi-brightness-high text-secondary bg-warning rounded rounded-circle ps-2 pe-2 pt-1 pb-1"></i></span>
+            <i class="bi bi-bell" class="text-secondary"></i>
+            <i class="fa-solid fa-list-ul text-secondary"></i>
+            <button data-bs-toggle="modal" data-bs-target="#staticBackdrop"><img src="./images/customer5.webp" class="rounded rounded-circle" alt=""></button>
+        </div>
+    </nav>
+    <!-- modal -->
+  
+  <!-- Modal -->
+  <div class="modal fade mt-5" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="staticBackdropLabel">Update Profile</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <img src="./images/customer5.webp" alt="" class="rounded rounded-circle m-auto d-block">
+          <span class="d-block text-center">Jerry Seinfield</span>
+          <input type="text" placeholder="Update you status" class="d-block m-auto rounded p-1">
+          <p><i class="bi bi-person-circle"></i> Profile</p>
+          <p><i class="bi bi-pie-chart-fill"></i> Dashboard</p>
+          <p><i class="bi bi-shield-check"></i> Post & Activity</p>
+          <p><i class="bi bi-gear"></i> Settings & Privacy</p>
+          <p><i class="bi bi-question-octagon"></i> Help Center</p>
+          <hr>
+          <p><i class="bi bi-person-add"></i> Add Another Account</p>
+        </div>
+        <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+    <!-- offcanvas -->
+    <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasBottom"></button>
+    <div class="offcanvas offcanvas-top" tabindex="-1" id="offcanvasBottom">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasBottomLabel">Offcanvas bottom</h5>
+            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"></button>
+        </div>
+        <div class="offcanvas-body small">
+            <nav class="navbar navbar-light ps-5 pe-5 d-flex justify-content-center align-items-center flex-column">
+                <div class="nav-search d-block order-1">
+                    <i class="bi bi-search text-secondary d-sm-none"></i>
+                    <input type="text" class="text-center" placeholder="Search...">
+                </div>
+                <div class="nav-info d-flex justify-content-between align-items-center order-0 mb-3">
+                    <span class="rounded rounded-circle"><i class="bi bi-brightness-high text-secondary bg-warning rounded rounded-circle ps-2 pe-2 pt-1 pb-1"></i></span>
+                    <i class="bi bi-bell" class="text-secondary"></i>
+                    <i class="fa-solid fa-list-ul text-secondary"></i>
+                    <img src="./images/customer5.webp" class="rounded rounded-circle" alt="">
+                </div>
+            </nav>
+        </div>
+    </div>
+    <!-- offcanvas end -->
+
+    <!-- aside bar -->
+    <aside class="bg-light d-lg-block">
+        <div class="first-toggle d-lg-block d-sm-none">
+            <ul class="list-unstyled">
+                <li><i class="fa-solid fa-caret-down"></i>&nbsp;&nbsp;&nbsp;<i class="bi bi-stopwatch"></i>&nbsp;&nbsp;<a class="btn" data-bs-toggle="collapse" href="#collapseExample">Home</a>
+                    <ul class="list-unstyled ps-5 mt-3 collapse" id="collapseExample">
+                        <li>E commerce</li>
+                        <li>Project management</li>
+                        <li>CRM</li>
+                        <li>Social feed</li>
+                    </ul>
+                </li>
+            </ul>
+            <p>Apps</p>
+            <ul class="list-unstyled">
+                <li class="e-commerce"><i class="fa-solid fa-caret-down"></i>&nbsp;&nbsp;&nbsp;<i class="bi bi-cart"></i> <a href="#rp2"
+                    class="btn" data-bs-toggle="collapse">E commerce</a>
+                    <ul class="list-unstyled ps-5 collapse" id="rp2">
+                        <li class="admin"><i class="fa-solid fa-caret-down"></i>&nbsp;&nbsp;&nbsp;<a href="#rp3" class="btn" data-bs-toggle="collapse">About</a>
+                            <ul class="list-unstyled ps-5 collapse" id="rp3">
+                                <li>Add products</li>
+                                <li>Products</li>
+                                <li>Customers</li>
+                                <li>Customer Details</li>
+                                <li>Orders</li>
+                                <li>Order details</li>
+                                <li>Refund</li>
+                            </ul>
+                        </li>
+                        <li class="customer"><i class="fa-solid fa-arrow-right"></i>&nbsp;&nbsp;&nbsp;<a href="#rp4" class="btn" data-bs-toggle="collapse">Customer</a>
+                            <ul class="list-unstyled ps-5 collapse" id="rp4">
+                                <li>Homepage</li>
+                                <li>Product details</li>
+                                <li>Product filter</li>
+                                <li>Cart</li>
+                                <li>Checkout</li>
+                                <li>Shipping info</li>
+                                <li>Profile</li>
+                                <li>Favourite stores</li>
+                                <li>Wishlist</li>
+                                <li>Order tracking</li>
+                                <li>Invoice</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+            <ul class="list-unstyled">
+                <li><a href="#rp5" class="btn" data-bs-toggle="collapse"><i class="fa-solid fa-caret-down"></i> <i class="bi bi-telephone"></i> CRM</a>
+                    <ul class="list-unstyled ps-5 collapse" id="rp5">
+                        <li>Analytic</li>
+                        <li>Deals</li>
+                        <li>Deals details</li>
+                        <li>leads</li>
+                        <li>lead details</li>
+                        <li>Reports</li>
+                        <li>Reports details</li>
+                        <li>Add contact</li>
+                    </ul>
+                </li>
+            </ul>
+            <ul class="list-unstyled">
+                <li><a href="#rp6" class="btn" data-bs-toggle="collapse"><i class="fa-solid fa-caret-down"></i> <i class="bi bi-journal-text"></i> Project management</a>
+                    <ul class="list-unstyled ps-5 collapse" id="rp6">
+                        <li>create New</li>
+                        <li>Projecta list view</li>
+                        <li>Project card view</li>
+                        <li>Project board view</li>
+                        <li>Todo list</li>
+                        <li>Project details</li>
+                    </ul>
+                </li>
+            </ul>
+            <ul class="list-unstyled">
+                <li><a href="#rp7" class="btn" data-bs-toggle="collapse"><i class="fa-solid fa-caret-down"></i> <i class="bi bi-envelope"></i> Email</a>
+                    <ul class="list-unstyled ps-5 collapse" id="rp7">
+                        <li>Inbox</li>
+                        <li>Email detail</li>
+                        <li>Compose</li>
+                    </ul>
+                </li>
+            </ul>
+            <ul class="list-unstyled">
+                <li><a href="#rp8" class="btn" data-bs-toggle="collapse"><i class="fa-solid fa-caret-down"></i> <i class="bi bi-floppy"></i> Events</a>
+                    <ul class="list-unstyled ps-5 collapse" id="rp8">
+                        <li>Create an event</li>
+                        <li>Event detail</li>
+                    </ul>
+                </li>
+            </ul>
+            <ul class="list-unstyled">
+                <li><a href="#rp9" class="btn" data-bs-toggle="collapse"><i class="fa-solid fa-caret-down"></i> <i class="bi bi-kanban"></i> Kanban</a>
+                    <ul class="list-unstyled ps-5 collapse" id="rp9">
+                        <li>Canban board</li>
+                        <li>Board</li>
+                        <li>Create board</li>
+                    </ul>
+                </li>
+            </ul>
+            <ul class="list-unstyled">
+                <li><a href="#rp10" class="btn" data-bs-toggle="collapse"><i class="fa-solid fa-caret-down"></i> <i class="bi bi-share"></i> Social</a>
+                    <ul class="list-unstyled ps-5 collapse" id="rp10">
+                        <li>Profile</li>
+                        <li>Settings</li>
+                    </ul>
+                </li>
+            </ul>
+            <p>Pages</p>
+            <span>Starter</span>
+            <ul class="list-unstyled">
+                <li><a href="#rp11" class="btn" data-bs-toggle="collapse"><i class="fa-solid fa-caret-down"></i> <i class="bi bi-patch-question-fill"></i> Faq</a>
+                    <ul class="list-unstyled ps-5 collapse" id="rp11">
+                        <li>Faq question</li>
+                        <li>Faq tab</li>
+                    </ul>
+                </li>
+            </ul>
+            <ul class="list-unstyled">
+                <li><a href="#rp12" class="btn" data-bs-toggle="collapse"><i class="fa-solid fa-caret-down"></i> <i class="bi bi-phone-landscape"></i> Landing</a>
+                    <ul class="list-unstyled ps-5 collapse" id="rp12">
+                        <li>Default</li>
+                        <li>Alternate</li>
+                    </ul>
+                </li>
+            </ul>
+            <ul class="list-unstyled">
+                <li><a href="#rp13" class="btn" data-bs-toggle="collapse"><i class="fa-solid fa-caret-down"></i> <i class="bi bi-tag"></i> Pricing</a>
+                    <ul class="list-unstyled ps-5 collapse" id="rp13">
+                        <li>Pricing Column</li>
+                        <li>Pricing grid</li>
+                    </ul>
+                </li>
+            </ul>
+            <ul class="list-unstyled">
+                <li><a href="#rp14" class="btn" data-bs-toggle="collapse"><i class="fa-solid fa-caret-down"></i> <i class="bi bi-bug"></i> Errors</a>
+                    <ul class="list-unstyled ps-5 collapse" id="rp14">
+                        <li>404</li>
+                        <li>403</li>
+                        <li>500</li>
+                    </ul>
+                </li>
+            </ul>
+            <ul class="list-unstyled">
+                <li><a href="#rp15" class="btn" data-bs-toggle="collapse"><i class="fa-solid fa-caret-down"></i> <i class="bi bi-badge-ar"></i> Authentication</a>
+                    <ul class="list-unstyled ps-5 collapse" id="rp15">
+                        <li><a href="#rp16" class="btn" data-bs-toggle="collapse"><i class="fa-solid fa-caret-down"></i> Simple</a>
+                            <ul class="ps-5 list-unstyled collapse" id="rp16">
+                                <li>Sign in</li>
+                                <li>Sign up</li>
+                                <li>Sign out</li>
+                                <li>Forget password</li>
+                                <li>Reset password</li>
+                                <li>Lock screen</li>
+                                <li>2Fa</li>
+                            </ul>
+                        </li>
+                        <li><a href="#rp17" class="btn" data-bs-toggle="collapse"><i class="fa-solid fa-caret-down"></i> Split</a>
+                            <ul class="ps-5 list-unstyled collapse" id="rp17">
+                                <li>Sign in</li>
+                                <li>Sign up</li>
+                                <li>Sign out</li>
+                                <li>Forget password</li>
+                                <li>Reset password</li>
+                                <li>Lock screen</li>
+                                <li>2Fa</li>
+                            </ul>
+                        </li>
+                        <li><a href="#rp18" class="btn" data-bs-toggle="collapse"><i class="fa-solid fa-caret-down"></i> Card</a>
+                            <ul class="ps-5 list-unstyled collapse" id="rp18">
+                                <li>Sign in</li>
+                                <li>Sign up</li>
+                                <li>Sign out</li>
+                                <li>Forget password</li>
+                                <li>Reset password</li>
+                                <li>Lock screen</li>
+                                <li>2Fa</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+            <ul class="list-unstyled">
+                <li><a href="#rp19" class="btn" data-bs-toggle="collapse"><i class="fa-solid fa-caret-down"></i> <i class="bi bi-columns-gap"></i> Layouts</a>
+                    <ul class="list-unstyled ps-5 collapse" id="rp19">
+                        <li>Vertical sidenav</li>
+                        <li>Dark mode</li>
+                        <li>Sidenav collapse</li>
+                        <li>Darknav</li>
+                        <li>Topnav slim</li>
+                        <li>Navbar top slim</li>
+                        <li>Navtop</li>
+                        <li>Horizontal slim</li>
+                        <li>Combo nav</li>
+                        <li>Combo nav slim</li>
+                        <li>Dual nav </li>
+                    </ul>
+                </li>
+            </ul>
+            <p>Modules</p>
+            <ul class="list-unstyled">
+                <li><a href="#rp20" data-bs-toggle="collapse" class="btn"><i class="fa-solid fa-caret-down"></i> <i class="bi bi-info"></i> Forms</a>
+                    <ul class="ps-5 list-unstyled collapse" id="rp20">
+                        <li><a href="#rp21" class="btn" data-bs-toggle="collapse"><i class="fa-solid fa-caret-down"></i> Basic</a>
+                            <ul class="ps-5 list-unstyled collapse" id="rp21">
+                                <li>Form control</li>
+                                <li>input group</li>
+                                <li>Select</li>
+                                <li>Checks</li>
+                                <li>Range</li>
+                                <li>flating labels</li>
+                                <li>Layouts</li>
+                            </ul>
+                        </li>
+                        <li><a href="#rp22" class="btn" data-bs-toggle="collapse"><i class="fa-solid fa-caret-down"></i> Advance</a>
+                            <ul class="list-unstyled ps-5 collapse" id="rp22">
+                                <li>Advance Select</li>
+                                <li>Data Picker</li>
+                                <li>Editor</li>
+                                <li>File uploader</li>
+                                <li>Ratin</li>
+                                <li>Emoji button</li>
+                            </ul>
+                        </li>
+                        <li>Validation</li>
+                        <li>Wizard</li>
+                    </ul>
+                </li>
+            </ul>
+            <ul class="list-unstyled">
+                <li><a href="#rp23" class="btn" data-bs-toggle="collapse"><i class="fa-solid fa-caret-down"></i> <i class="bi bi-wallet"></i> Cards</a>
+                    <ul class="list-unstyled collapse ps-5" id="rp23">
+                        <li>Feather</li>
+                        <li>Font awesome</li>
+                        <li>Unicons</li>
+                    </ul>
+                </li>
+            </ul>
+            <ul class="list-unstyled">
+                <li><a href="#rp24" class="btn" data-bs-toggle="collapse"><i class="fa-solid fa-caret-down"></i> <i class="bi bi-table"></i> Tables</a>
+                    <ul class="list-unstyled collapse ps-5" id="rp24">
+                        <li>Basic Table</li>
+                        <li>Advance Table</li>
+                        <li>Bulk Table</li>
+                    </ul>
+                </li>
+            </ul>
+            <ul class="list-unstyled">
+                <li><a href="#rp25" class="btn" data-bs-toggle="collapse"><i class="fa-solid fa-caret-down"></i> <i class="bi bi-bar-chart"></i> E Charts</a>
+                    <ul class="list-unstyled ps-5 collapse" id="rp25">
+                        <li>Line Charts</li>
+                        <li>Bar Charts</li>
+                        <li>Candlestick charts</li>
+                        <li>Geo Map</li>
+                        <li>Scatters charts</li>
+                        <li>Pie charts</li>
+                        <li>Gauge charts</li>
+                        <li>Radar charts</li>
+                        <li>Heatmap charts</li>
+                        <li>How to use</li>
+                    </ul>
+                </li>
+            </ul>
+            <ul class="list-unstyled">
+                <li><a href="#rp26" data-bs-toggle="collapse" class="btn"><i class="fa-solid fa-caret-down"></i> <i class="bi bi-building"></i> Components</a>
+                    <ul class="ps-5 list-unstyled collapse" id="rp26">
+                        <li>Accordion</li>
+                        <li>Avatar</li>
+                        <li>Alerts</li>
+                        <li>badge</li>
+                        <li>BradCrumb</li>
+                        <li>buttons</li>
+                        <li>calendar</li>
+                        <li>Card</li>
+                        <li><a href="#rp27" data-bs-toggle="collapse" class="btn"><i class="fa-solid fa-caret-down"></i> Carousel</a>
+                            <ul class="ps-5 list-unstyled collapse" id="rp27">
+                                <li>bootstrap</li>
+                                <li>swiper</li>
+                            </ul>
+                        </li>
+                        <li>collapse</li>
+                        <li>Dropdownn</li>
+                        <li>List group</li>
+                        <li>Modals</li>
+                        <li><a href="#rp28" data-bs-toggle="collapse" class="btn"><i class="fa-solid fa-caret-down"></i> Nav  & Tabs</a>
+                            <ul class="ps-5 list-unstyled collapse" id="rp28">
+                                <li>Navs</li>
+                                <li>Nav bar</li>
+                                <li>Tabs</li>
+                            </ul>
+                        </li>
+                        <li>offcanvas</li>
+                        <li>Porgess bar</li>
+                        <li>Placeholder</li>
+                        <li>Pagination</li>
+                        <li>Popovers</li>
+                        <li>Scrollspy</li>
+                        <li>Sortable</li>
+                        <li>Spinners</li>
+                        <li>Toast</li>
+                        <li>Tooltip</li>
+                        <li>Chat widtget</li>
+                    </ul>
+                </li>
+            </ul>
+            <ul class="list-unstyled">
+                <li><a href="#rp29" class="btn" data-bs-toggle="collapse"><i class="fa-solid fa-caret-down"></i> <i class="bi bi-badge-4k"></i> Utilites</a>
+                    <ul class="ps-5 list-unstyled collapse" id="rp29">
+                        <li>Background</li>
+                        <li>Borders</li>
+                        <li>colors</li>
+                        <li>Display</li>
+                        <li>Flex</li>
+                        <li>Stacks</li>
+                        <li>Float</li>
+                        <li>grid</li>
+                        <li>interactions</li>
+                        <li>opacity</li>
+                        <li>overflow</li>
+                        <li>position</li>
+                        <li>Shadows</li>
+                        <li>Sizing</li>
+                        <li>Spacing</li>
+                        <li>Typography</li>
+                        <li>Vertical align</li>
+                        <li>Visibility</li>
+                    </ul>
+                </li>
+            </ul>
+            <ul class="list-unstyled">
+                <li><a href="#rp30" class="btn" data-bs-toggle="collapse"><i class="fa-solid fa-caret-down"></i> Multi level</a>
+                   <ul class="list-unstyled ps-5 collapse" id="rp30">
+                    <li><a href="#rp31" class="btn" data-bs-toggle="collapse"><i class="fa-solid fa-caret-down"></i> Level Two</a>
+                        <ul class="list-unstyled ps-5 collapse" id="rp31">
+                            <li>item 1</li>
+                            <li>item 2</li>
+                        </ul>
+                    </li>
+                    <li><a href="#rp32" class="btn" data-bs-toggle="collapse"><i class="fa-solid fa-caret-down"></i> Level three</a>
+                        <ul class="list-unstyled ps-5 collapse" id="rp32">
+                            <li>item 3</li>
+                            <li><a href="#rp33" class="btn" data-bs-toggle="collapse"><i class="fa-solid fa-caret-down"></i> item 4</a>
+                                <ul class="ps-5 list-unstyled collapse" id="rp33">
+                                    <li>item 5</li>
+                                    <li>item 6</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li><a href="#rp34" class="btn" data-bs-toggle="collapse"><i class="fa-solid fa-caret-down"></i> Level four</a>
+                        <ul class="ps-5 list-unstyled collapse" id="rp34">
+                            <li>item 6</li>
+                            <li><a href="#rp35" class="btn" data-bs-toggle="collapse"><i class="fa-solid fa-caret-down"></i> item 7</a>
+                                <ul class="ps-5 list-unstyled collapse" id="rp35">
+                                    <li>item 8</li>
+                                    <li><a href="#rp36" class="btn" data-bs-toggle="collapse"><i class="fa-solid fa-caret-down"></i> item 9</a>
+                                        <ul class="ps-5 list-unstyled collapse" id="rp36">
+                                            <li>item 10</li>
+                                            <li>item 11</li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                   </ul> 
+                </li>
+            </ul>
+            <p>Documentation</p>
+            <span>Getting started</span>
+            <ul class="list-unstyled">
+                <li><a href="#rp37" class="btn" data-bs-toggle="collapse"><i class="bi bi-gear"></i> customization</a>
+                    <ul class="ps-5 list-unstyled collapse" id="rp37">
+                        <li>Configuration</li>
+                        <li>Styling</li>
+                        <li>color</li>
+                        <li>Dark mode</li>
+                        <li>Plugin</li>
+                    </ul>
+                </li>
+            </ul>
+            <ul class="list-unstyled">
+                <li><a href="#rp38" class="btn" data-bs-toggle="collapse">Layouts doc</a>
+                    <ul class="ps-5 list-unstyled collapse" id="#rp38">
+                        <li>Vertical navbar</li>
+                        <li>Horizontal navbar</li>
+                        <li>Combo navbar</li>
+                        <li>Dual nav</li>
+                    </ul>
+                </li>
+            </ul>
+            <ul class="list-unstyled">
+                <li><i class="bi bi-egg-fried"></i> Gulp</li>
+                <li class="mt-3"><i class="bi bi-file-earmark-ppt"></i> Design file</li>
+                <li class="mt-3"><i class="bi bi-currency-exchange"></i> Changelog</li>
+                <li class="mt-3"><i class="bi bi-tv"></i> Showcase</li>
+            </ul>
+        </div>
+        <div class="collapsed-view text-secondary d-none">
+            <span><i class="bi bi-arrow-bar-left"></i> Collapsed view</span>
+        </div>
+    </aside>
+
+    <!-- offcanvas of aside-->
+    <div class="offcanvas offcanvas-start pt-5" tabindex="-1" id="offcanvasWithBackdrop" aria-labelledby="offcanvasWithBackdropLabel">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="offcanvasWithBackdropLabel"></h5>
+          <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+            <div class="first-toggle">
+                <ul class="list-unstyled">
+                    <li><i class="fa-solid fa-caret-down"></i>&nbsp;&nbsp;&nbsp;<i class="bi bi-stopwatch"></i>&nbsp;&nbsp;<a class="btn" data-bs-toggle="collapse" href="#collapseExample">Home</a>
+                        <ul class="list-unstyled ps-5 mt-3 collapse" id="collapseExample">
+                            <li>E commerce</li>
+                            <li>Project management</li>
+                            <li>CRM</li>
+                            <li>Social feed</li>
+                        </ul>
+                    </li>
+                </ul>
+                <p>Apps</p>
+                <ul class="list-unstyled">
+                    <li class="e-commerce"><i class="fa-solid fa-caret-down"></i>&nbsp;&nbsp;&nbsp;<i class="bi bi-cart"></i> <a href="#rp2"
+                        class="btn" data-bs-toggle="collapse">E commerce</a>
+                        <ul class="list-unstyled ps-5 collapse" id="rp2">
+                            <li class="admin"><i class="fa-solid fa-caret-down"></i>&nbsp;&nbsp;&nbsp;<a href="#rp3" class="btn" data-bs-toggle="collapse">About</a>
+                                <ul class="list-unstyled ps-5 collapse" id="rp3">
+                                    <li>Add products</li>
+                                    <li>Products</li>
+                                    <li>Customers</li>
+                                    <li>Customer Details</li>
+                                    <li>Orders</li>
+                                    <li>Order details</li>
+                                    <li>Refund</li>
+                                </ul>
+                            </li>
+                            <li class="customer"><i class="fa-solid fa-arrow-right"></i>&nbsp;&nbsp;&nbsp;<a href="#rp4" class="btn" data-bs-toggle="collapse">Customer</a>
+                                <ul class="list-unstyled ps-5 collapse" id="rp4">
+                                    <li>Homepage</li>
+                                    <li>Product details</li>
+                                    <li>Product filter</li>
+                                    <li>Cart</li>
+                                    <li>Checkout</li>
+                                    <li>Shipping info</li>
+                                    <li>Profile</li>
+                                    <li>Favourite stores</li>
+                                    <li>Wishlist</li>
+                                    <li>Order tracking</li>
+                                    <li>Invoice</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+                <ul class="list-unstyled">
+                    <li><a href="#rp5" class="btn" data-bs-toggle="collapse"><i class="fa-solid fa-caret-down"></i> <i class="bi bi-telephone"></i> CRM</a>
+                        <ul class="list-unstyled ps-5 collapse" id="rp5">
+                            <li>Analytic</li>
+                            <li>Deals</li>
+                            <li>Deals details</li>
+                            <li>leads</li>
+                            <li>lead details</li>
+                            <li>Reports</li>
+                            <li>Reports details</li>
+                            <li>Add contact</li>
+                        </ul>
+                    </li>
+                </ul>
+                <ul class="list-unstyled">
+                    <li><a href="#rp6" class="btn" data-bs-toggle="collapse"><i class="fa-solid fa-caret-down"></i> <i class="bi bi-journal-text"></i> Project management</a>
+                        <ul class="list-unstyled ps-5 collapse" id="rp6">
+                            <li>create New</li>
+                            <li>Projecta list view</li>
+                            <li>Project card view</li>
+                            <li>Project board view</li>
+                            <li>Todo list</li>
+                            <li>Project details</li>
+                        </ul>
+                    </li>
+                </ul>
+                <ul class="list-unstyled">
+                    <li><a href="#rp7" class="btn" data-bs-toggle="collapse"><i class="fa-solid fa-caret-down"></i> <i class="bi bi-envelope"></i> Email</a>
+                        <ul class="list-unstyled ps-5 collapse" id="rp7">
+                            <li>Inbox</li>
+                            <li>Email detail</li>
+                            <li>Compose</li>
+                        </ul>
+                    </li>
+                </ul>
+                <ul class="list-unstyled">
+                    <li><a href="#rp8" class="btn" data-bs-toggle="collapse"><i class="fa-solid fa-caret-down"></i> <i class="bi bi-floppy"></i> Events</a>
+                        <ul class="list-unstyled ps-5 collapse" id="rp8">
+                            <li>Create an event</li>
+                            <li>Event detail</li>
+                        </ul>
+                    </li>
+                </ul>
+                <ul class="list-unstyled">
+                    <li><a href="#rp9" class="btn" data-bs-toggle="collapse"><i class="fa-solid fa-caret-down"></i> <i class="bi bi-kanban"></i> Kanban</a>
+                        <ul class="list-unstyled ps-5 collapse" id="rp9">
+                            <li>Canban board</li>
+                            <li>Board</li>
+                            <li>Create board</li>
+                        </ul>
+                    </li>
+                </ul>
+                <ul class="list-unstyled">
+                    <li><a href="#rp10" class="btn" data-bs-toggle="collapse"><i class="fa-solid fa-caret-down"></i> <i class="bi bi-share"></i> Social</a>
+                        <ul class="list-unstyled ps-5 collapse" id="rp10">
+                            <li>Profile</li>
+                            <li>Settings</li>
+                        </ul>
+                    </li>
+                </ul>
+                <p>Pages</p>
+                <span>Starter</span>
+                <ul class="list-unstyled">
+                    <li><a href="#rp11" class="btn" data-bs-toggle="collapse"><i class="fa-solid fa-caret-down"></i> <i class="bi bi-patch-question-fill"></i> Faq</a>
+                        <ul class="list-unstyled ps-5 collapse" id="rp11">
+                            <li>Faq question</li>
+                            <li>Faq tab</li>
+                        </ul>
+                    </li>
+                </ul>
+                <ul class="list-unstyled">
+                    <li><a href="#rp12" class="btn" data-bs-toggle="collapse"><i class="fa-solid fa-caret-down"></i> <i class="bi bi-phone-landscape"></i> Landing</a>
+                        <ul class="list-unstyled ps-5 collapse" id="rp12">
+                            <li>Default</li>
+                            <li>Alternate</li>
+                        </ul>
+                    </li>
+                </ul>
+                <ul class="list-unstyled">
+                    <li><a href="#rp13" class="btn" data-bs-toggle="collapse"><i class="fa-solid fa-caret-down"></i> <i class="bi bi-tag"></i> Pricing</a>
+                        <ul class="list-unstyled ps-5 collapse" id="rp13">
+                            <li>Pricing Column</li>
+                            <li>Pricing grid</li>
+                        </ul>
+                    </li>
+                </ul>
+                <ul class="list-unstyled">
+                    <li><a href="#rp14" class="btn" data-bs-toggle="collapse"><i class="fa-solid fa-caret-down"></i> <i class="bi bi-bug"></i> Errors</a>
+                        <ul class="list-unstyled ps-5 collapse" id="rp14">
+                            <li>404</li>
+                            <li>403</li>
+                            <li>500</li>
+                        </ul>
+                    </li>
+                </ul>
+                <ul class="list-unstyled">
+                    <li><a href="#rp15" class="btn" data-bs-toggle="collapse"><i class="fa-solid fa-caret-down"></i> <i class="bi bi-badge-ar"></i> Authentication</a>
+                        <ul class="list-unstyled ps-5 collapse" id="rp15">
+                            <li><a href="#rp16" class="btn" data-bs-toggle="collapse"><i class="fa-solid fa-caret-down"></i> Simple</a>
+                                <ul class="ps-5 list-unstyled collapse" id="rp16">
+                                    <li>Sign in</li>
+                                    <li>Sign up</li>
+                                    <li>Sign out</li>
+                                    <li>Forget password</li>
+                                    <li>Reset password</li>
+                                    <li>Lock screen</li>
+                                    <li>2Fa</li>
+                                </ul>
+                            </li>
+                            <li><a href="#rp17" class="btn" data-bs-toggle="collapse"><i class="fa-solid fa-caret-down"></i> Split</a>
+                                <ul class="ps-5 list-unstyled collapse" id="rp17">
+                                    <li>Sign in</li>
+                                    <li>Sign up</li>
+                                    <li>Sign out</li>
+                                    <li>Forget password</li>
+                                    <li>Reset password</li>
+                                    <li>Lock screen</li>
+                                    <li>2Fa</li>
+                                </ul>
+                            </li>
+                            <li><a href="#rp18" class="btn" data-bs-toggle="collapse"><i class="fa-solid fa-caret-down"></i> Card</a>
+                                <ul class="ps-5 list-unstyled collapse" id="rp18">
+                                    <li>Sign in</li>
+                                    <li>Sign up</li>
+                                    <li>Sign out</li>
+                                    <li>Forget password</li>
+                                    <li>Reset password</li>
+                                    <li>Lock screen</li>
+                                    <li>2Fa</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+                <ul class="list-unstyled">
+                    <li><a href="#rp19" class="btn" data-bs-toggle="collapse"><i class="fa-solid fa-caret-down"></i> <i class="bi bi-columns-gap"></i> Layouts</a>
+                        <ul class="list-unstyled ps-5 collapse" id="rp19">
+                            <li>Vertical sidenav</li>
+                            <li>Dark mode</li>
+                            <li>Sidenav collapse</li>
+                            <li>Darknav</li>
+                            <li>Topnav slim</li>
+                            <li>Navbar top slim</li>
+                            <li>Navtop</li>
+                            <li>Horizontal slim</li>
+                            <li>Combo nav</li>
+                            <li>Combo nav slim</li>
+                            <li>Dual nav </li>
+                        </ul>
+                    </li>
+                </ul>
+                <p>Modules</p>
+                <ul class="list-unstyled">
+                    <li><a href="#rp20" data-bs-toggle="collapse" class="btn"><i class="fa-solid fa-caret-down"></i> <i class="bi bi-info"></i> Forms</a>
+                        <ul class="ps-5 list-unstyled collapse" id="rp20">
+                            <li><a href="#rp21" class="btn" data-bs-toggle="collapse"><i class="fa-solid fa-caret-down"></i> Basic</a>
+                                <ul class="ps-5 list-unstyled collapse" id="rp21">
+                                    <li>Form control</li>
+                                    <li>input group</li>
+                                    <li>Select</li>
+                                    <li>Checks</li>
+                                    <li>Range</li>
+                                    <li>flating labels</li>
+                                    <li>Layouts</li>
+                                </ul>
+                            </li>
+                            <li><a href="#rp22" class="btn" data-bs-toggle="collapse"><i class="fa-solid fa-caret-down"></i> Advance</a>
+                                <ul class="list-unstyled ps-5 collapse" id="rp22">
+                                    <li>Advance Select</li>
+                                    <li>Data Picker</li>
+                                    <li>Editor</li>
+                                    <li>File uploader</li>
+                                    <li>Ratin</li>
+                                    <li>Emoji button</li>
+                                </ul>
+                            </li>
+                            <li>Validation</li>
+                            <li>Wizard</li>
+                        </ul>
+                    </li>
+                </ul>
+                <ul class="list-unstyled">
+                    <li><a href="#rp23" class="btn" data-bs-toggle="collapse"><i class="fa-solid fa-caret-down"></i> <i class="bi bi-wallet"></i> Cards</a>
+                        <ul class="list-unstyled collapse ps-5" id="rp23">
+                            <li>Feather</li>
+                            <li>Font awesome</li>
+                            <li>Unicons</li>
+                        </ul>
+                    </li>
+                </ul>
+                <ul class="list-unstyled">
+                    <li><a href="#rp24" class="btn" data-bs-toggle="collapse"><i class="fa-solid fa-caret-down"></i> <i class="bi bi-table"></i> Tables</a>
+                        <ul class="list-unstyled collapse ps-5" id="rp24">
+                            <li>Basic Table</li>
+                            <li>Advance Table</li>
+                            <li>Bulk Table</li>
+                        </ul>
+                    </li>
+                </ul>
+                <ul class="list-unstyled">
+                    <li><a href="#rp25" class="btn" data-bs-toggle="collapse"><i class="fa-solid fa-caret-down"></i> <i class="bi bi-bar-chart"></i> E Charts</a>
+                        <ul class="list-unstyled ps-5 collapse" id="rp25">
+                            <li>Line Charts</li>
+                            <li>Bar Charts</li>
+                            <li>Candlestick charts</li>
+                            <li>Geo Map</li>
+                            <li>Scatters charts</li>
+                            <li>Pie charts</li>
+                            <li>Gauge charts</li>
+                            <li>Radar charts</li>
+                            <li>Heatmap charts</li>
+                            <li>How to use</li>
+                        </ul>
+                    </li>
+                </ul>
+                <ul class="list-unstyled">
+                    <li><a href="#rp26" data-bs-toggle="collapse" class="btn"><i class="fa-solid fa-caret-down"></i> <i class="bi bi-building"></i> Components</a>
+                        <ul class="ps-5 list-unstyled collapse" id="rp26">
+                            <li>Accordion</li>
+                            <li>Avatar</li>
+                            <li>Alerts</li>
+                            <li>badge</li>
+                            <li>BradCrumb</li>
+                            <li>buttons</li>
+                            <li>calendar</li>
+                            <li>Card</li>
+                            <li><a href="#rp27" data-bs-toggle="collapse" class="btn"><i class="fa-solid fa-caret-down"></i> Carousel</a>
+                                <ul class="ps-5 list-unstyled collapse" id="rp27">
+                                    <li>bootstrap</li>
+                                    <li>swiper</li>
+                                </ul>
+                            </li>
+                            <li>collapse</li>
+                            <li>Dropdownn</li>
+                            <li>List group</li>
+                            <li>Modals</li>
+                            <li><a href="#rp28" data-bs-toggle="collapse" class="btn"><i class="fa-solid fa-caret-down"></i> Nav  & Tabs</a>
+                                <ul class="ps-5 list-unstyled collapse" id="rp28">
+                                    <li>Navs</li>
+                                    <li>Nav bar</li>
+                                    <li>Tabs</li>
+                                </ul>
+                            </li>
+                            <li>offcanvas</li>
+                            <li>Porgess bar</li>
+                            <li>Placeholder</li>
+                            <li>Pagination</li>
+                            <li>Popovers</li>
+                            <li>Scrollspy</li>
+                            <li>Sortable</li>
+                            <li>Spinners</li>
+                            <li>Toast</li>
+                            <li>Tooltip</li>
+                            <li>Chat widtget</li>
+                        </ul>
+                    </li>
+                </ul>
+                <ul class="list-unstyled">
+                    <li><a href="#rp29" class="btn" data-bs-toggle="collapse"><i class="fa-solid fa-caret-down"></i> <i class="bi bi-badge-4k"></i> Utilites</a>
+                        <ul class="ps-5 list-unstyled collapse" id="rp29">
+                            <li>Background</li>
+                            <li>Borders</li>
+                            <li>colors</li>
+                            <li>Display</li>
+                            <li>Flex</li>
+                            <li>Stacks</li>
+                            <li>Float</li>
+                            <li>grid</li>
+                            <li>interactions</li>
+                            <li>opacity</li>
+                            <li>overflow</li>
+                            <li>position</li>
+                            <li>Shadows</li>
+                            <li>Sizing</li>
+                            <li>Spacing</li>
+                            <li>Typography</li>
+                            <li>Vertical align</li>
+                            <li>Visibility</li>
+                        </ul>
+                    </li>
+                </ul>
+                <ul class="list-unstyled">
+                    <li><a href="#rp30" class="btn" data-bs-toggle="collapse"><i class="fa-solid fa-caret-down"></i> Multi level</a>
+                       <ul class="list-unstyled ps-5 collapse" id="rp30">
+                        <li><a href="#rp31" class="btn" data-bs-toggle="collapse"><i class="fa-solid fa-caret-down"></i> Level Two</a>
+                            <ul class="list-unstyled ps-5 collapse" id="rp31">
+                                <li>item 1</li>
+                                <li>item 2</li>
+                            </ul>
+                        </li>
+                        <li><a href="#rp32" class="btn" data-bs-toggle="collapse"><i class="fa-solid fa-caret-down"></i> Level three</a>
+                            <ul class="list-unstyled ps-5 collapse" id="rp32">
+                                <li>item 3</li>
+                                <li><a href="#rp33" class="btn" data-bs-toggle="collapse"><i class="fa-solid fa-caret-down"></i> item 4</a>
+                                    <ul class="ps-5 list-unstyled collapse" id="rp33">
+                                        <li>item 5</li>
+                                        <li>item 6</li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li><a href="#rp34" class="btn" data-bs-toggle="collapse"><i class="fa-solid fa-caret-down"></i> Level four</a>
+                            <ul class="ps-5 list-unstyled collapse" id="rp34">
+                                <li>item 6</li>
+                                <li><a href="#rp35" class="btn" data-bs-toggle="collapse"><i class="fa-solid fa-caret-down"></i> item 7</a>
+                                    <ul class="ps-5 list-unstyled collapse" id="rp35">
+                                        <li>item 8</li>
+                                        <li><a href="#rp36" class="btn" data-bs-toggle="collapse"><i class="fa-solid fa-caret-down"></i> item 9</a>
+                                            <ul class="ps-5 list-unstyled collapse" id="rp36">
+                                                <li>item 10</li>
+                                                <li>item 11</li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                       </ul> 
+                    </li>
+                </ul>
+                <p>Documentation</p>
+                <span>Getting started</span>
+                <ul class="list-unstyled">
+                    <li><a href="#rp37" class="btn" data-bs-toggle="collapse"><i class="bi bi-gear"></i> customization</a>
+                        <ul class="ps-5 list-unstyled collapse" id="rp37">
+                            <li>Configuration</li>
+                            <li>Styling</li>
+                            <li>color</li>
+                            <li>Dark mode</li>
+                            <li>Plugin</li>
+                        </ul>
+                    </li>
+                </ul>
+                <ul class="list-unstyled">
+                    <li><a href="#rp38" class="btn" data-bs-toggle="collapse">Layouts doc</a>
+                        <ul class="ps-5 list-unstyled collapse" id="#rp38">
+                            <li>Vertical navbar</li>
+                            <li>Horizontal navbar</li>
+                            <li>Combo navbar</li>
+                            <li>Dual nav</li>
+                        </ul>
+                    </li>
+                </ul>
+                <ul class="list-unstyled">
+                    <li><i class="bi bi-egg-fried"></i> Gulp</li>
+                    <li class="mt-3"><i class="bi bi-file-earmark-ppt"></i> Design file</li>
+                    <li class="mt-3"><i class="bi bi-currency-exchange"></i> Changelog</li>
+                    <li class="mt-3"><i class="bi bi-tv"></i> Showcase</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- first content -->
+    <main class="w-sm-100">
+        <div class="first-content">
+            <h2>Ecommerce Dashboard</h2>
+            <span class="text-secondary">Here’s what’s going on at your business right now</span>
+            <div class="row mt-3">
+               <div class="col-12 d-flex">
+                    <div class="rohit">
+                        <h5 class="m-0">57 New Orders</h5>
+                        <span class="text-secondary">Awaiting Processing</span>
+                    </div>
+                    <div class="rohit ms-5">
+                        <h5 class="m-0">5 Orders</h5>
+                        <span class="text-secondary">On Hold</span>
+                    </div>
+                    <div class="rohit ms-5">
+                        <h5 class="m-0">15 Products</h5>
+                        <span class="text-secondary">Out of Stock</span>
+                    </div>
+               </div>
+            </div>
+        </div>
+        <hr>
+
+        <!-- second content -->
+        <div class="second-content">
+            <div class="row align-items-center text-sm-center text-lg-start">
+                <div class="col-lg-6 col-sm-12">
+                    <h3 class="m-0">Total sells</h3>
+                    <span>Payment received across all channels</span>
+                </div>
+                <div class="col-lg-6 col-sm-12 mt-sm-3 mt-lg-0">
+                    <select class="form-select form-select-sm w-50 m-sm-auto ">
+                        <option value="1">Mar 1-31, 2022</option>
+                        <option value="2">April 1-30, 2022 </option>
+                        <option value="3">May 1-31, 2022</option>
+                    </select>
+                </div>
+            </div>
+            <!-- graph -->
+            <div class="row mt-3">
+                <div class="row">
+                    <div class="col-lg-12 col-sm-12">
+                        <div id="container"></div>
+                    </div>
+                </div>
+                <div class="col-4 text-center"><span>01 May</span></div>
+                <div class="col-4 text-center"><span>15 May</span></div>
+                <div class="col-4 text-center"><span>30 May</span></div>
+            </div>
+        </div>
+
+        <!-- third content -->
+        <div class="third-content mt-5">
+            <div class="row flex-wrap d-flex justify-content-between">
+                <div class="col-lg-5 bg-white mb-3 col-sm-12 p-sm-3">
+                    <div class="col-5-headings d-flex justify-content-between">
+                        <h5>Total orders</h5>
+                        <h5>16,247</h5>
+                    </div>
+                    <span>Last 7 days</span>
+                    <div class="third-graph text-center">
+                        <div>
+                            <canvas id="myChart3"></canvas>
+                        </div>
+                    </div>
+                    <div class="col-5-info">
+                        <div class="info-content d-flex justify-content-between">
+                           <div class="info-bullets">
+                            <p class="m-1">
+                                <span class="rounded">...</span>
+                                <span>Completed</span>
+                            </p>
+                            <p class="m-1">
+                                <span class="">...</span>
+                                <span>Pending Payment</span>
+                            </p>
+                           </div>
+                           <div class="info-detail">
+                            <span>52%</span><br>
+                            <span>48%</span>
+                           </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-5 bg-white mb-3 col-sm-12 p-sm-3">
+                    <div class="col-5-headings d-flex justify-content-between">
+                        <h5>New Customers</h5>
+                        <h5>356</h5>
+                    </div>
+                    <span>Last 7 days</span>
+                    <div class="third-graph text-center">
+                        <div>
+                            <canvas id="myChart4"></canvas>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="info-graph d-flex justify-content-between">
+                        <span>01 May</span><span>07 May</span>
+                    </div>
+                </div>
+                <div class="col-lg-5 bg-white col-sm-12 mb-sm-3 p-sm-3">
+                    <h5>Top Coupons</h5>
+                    <span>Last 7 days</span>
+                    <div class="third-graph text-center">
+                        <div>
+                            <canvas id="myChart5"></canvas>
+                        </div>
+                    </div>
+                    <div class="col-5-info">
+                        <div class="info-content d-flex justify-content-between">
+                           <div class="info-bullets">
+                            <p class="m-1">
+                                <span class="">...</span>
+                                <span>Completed</span>
+                            </p>
+                            <p class="m-1">
+                                <span class="">...</span>
+                                <span>Pending Payment</span>
+                            </p>
+                            <p class="m-1">
+                                <span class="">...</span>
+                                <span>Pending Payment</span>
+                            </p>
+                           </div>
+                           <div class="info-detail">
+                            <span>72%</span><br>
+                            <span>18%</span><br>
+                            <span>10%</span>
+                           </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-5 bg-white col-sm-12 p-sm-3">
+                    <h5>Paying vs Non Paying</h5>
+                    <span>Last 7 days</span>
+                    <div class="third-graph text-center">
+                        <div>
+                            <canvas id="myChart6"></canvas>
+                        </div>
+                    </div>
+                    <div class="col-5-info">
+                        <div class="info-content d-flex justify-content-between">
+                           <div class="info-bullets">
+                            <p class="m-1">
+                                <span class="">...</span>
+                                <span>Completed</span><br>
+                            </p>
+                            <p class="m-0">
+                                <span class="">...</span>
+                                <span>Pending Payment</span>
+                            </p>
+                           </div>
+                           <div class="info-detail">
+                            <span>30%</span><br>
+                            <span>70%</span>
+                           </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <!-- fourth content -->
+    <div class="fourth-content bg-white overflow-scroll">
+        <div class="row align-items-center">
+            <div class="col-6">
+                <h3 class="m-1">Latest reviews</h3>
+                <span class="text-secondary">Payment received across all channels</span>
+            </div>
+            <div class="col-6">
+                <i class="bi bi-search text-secondary d-sm-none d-lg-block"></i><input type="text" placeholder="search">
+                <button class="btn btn-outline-secondary">All Products</button>
+                <button class="btn btn-outline-secondary">...</button>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12">
+                <table class="table table-responsive">
+                    <thead>
+                        <tr>
+                            <th><input type="checkbox"></th>
+                            <th>Products</th>
+                            <th>Customer</th>
+                            <th>RATING</th>
+                            <th>Review</th>
+                            <th>Status</th>
+                            <th>Time</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><input type="checkbox" name="" id=""></td>
+                            <td>
+                                <span class="rounded"><img src="./images/table1.png" alt="" height="53px" width="53px"></span>
+                                <a href="">	Fitbit Sense Advanced Smartwatch with Tools fo...</a>
+                            </td>
+                            <td><img src="./images/customer1.webp" alt="" class="rounded rounded-circle"> Richard Dawkins</td>
+                            <td>
+                                <i class="bi bi-star-fill text-warning"></i>
+                                <i class="bi bi-star-fill text-warning"></i>
+                                <i class="bi bi-star-fill text-warning"></i>
+                                <i class="bi bi-star-fill text-warning"></i>
+                                <i class="bi bi-star-fill text-warning"></i>
+                            </td>  
+                            <td>
+                                <span>This Fitbit is fantastic! I was trying to be in <br> better shape and needed some motivation, so <br> I decided to treat myself to a new Fitbit.</span>
+                            </td>
+                            <td>
+                                <span class="badge bg-success">Applied</span>
+                            </td>
+                            <td>
+                                Just Now ...
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox" name="" id=""></td>
+                            <td>
+                                <span class="rounded"><img src="./images/table2.png" alt="" height="53px" width="53px"></span>
+                                <a href="">	Fitbit Sense Advanced Smartwatch with Tools fo...</a>
+                            </td>
+                            <td><img src="./images/customer2.webp" alt="" class="rounded rounded-circle"> Richard Dawkins</td>
+                            <td>
+                                <i class="bi bi-star-fill text-warning"></i>
+                                <i class="bi bi-star-fill text-warning"></i>
+                                <i class="bi bi-star-fill text-warning"></i>
+                                <i class="bi bi-star-fill text-warning"></i>
+                                <i class="bi bi-star-fill text-warning"></i>
+                            </td>  
+                            <td>
+                                <span>This Fitbit is fantastic! I was trying to be in <br> better shape and needed some motivation, so <br> I decided to treat myself to a new Fitbit.</span>
+                            </td>
+                            <td>
+                                <span class="badge bg-success">Applied</span>
+                            </td>
+                            <td>
+                                Just Now ...
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox" name="" id=""></td>
+                            <td>
+                                <span class="rounded"><img src="./images/table3.png" alt="" height="53px" width="53px"></span>
+                                <a href="">	Fitbit Sense Advanced Smartwatch with Tools fo...</a>
+                            </td>
+                            <td><img src="./images/customer1.webp" alt="" class="rounded rounded-circle"> Richard Dawkins</td>
+                            <td>
+                                <i class="bi bi-star-fill text-warning"></i>
+                                <i class="bi bi-star-fill text-warning"></i>
+                                <i class="bi bi-star-fill text-warning"></i>
+                                <i class="bi bi-star-fill text-warning"></i>
+                                <i class="bi bi-star-fill text-warning"></i>
+                            </td>  
+                            <td>
+                                <span>This Fitbit is fantastic! I was trying to be in <br> better shape and needed some motivation, so <br> I decided to treat myself to a new Fitbit.</span>
+                            </td>
+                            <td>
+                                <span class="badge bg-danger">Pending</span>
+                            </td>
+                            <td>
+                                Just Now ...
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox" name="" id=""></td>
+                            <td>
+                                <span class="rounded"><img src="./images/table4.png" alt="" height="53px" width="53px"></span>
+                                <a href="">	Fitbit Sense Advanced Smartwatch with Tools fo...</a>
+                            </td>
+                            <td><img src="./images/customer3.webp" alt="" class="rounded rounded-circle"> Richard Dawkins</td>
+                            <td>
+                                <i class="bi bi-star-fill text-warning"></i>
+                                <i class="bi bi-star-fill text-warning"></i>
+                                <i class="bi bi-star-fill text-warning"></i>
+                                <i class="bi bi-star-fill text-warning"></i>
+                                <i class="bi bi-star-fill text-warning"></i>
+                            </td>  
+                            <td>
+                                <span>This Fitbit is fantastic! I was trying to be in <br> better shape and needed some motivation, so <br> I decided to treat myself to a new Fitbit.</span>
+                            </td>
+                            <td>
+                                <span class="badge bg-danger">Pending</span>
+                            </td>
+                            <td>
+                                Just Now ...
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox" name="" id=""></td>
+                            <td>
+                                <span class="rounded"><img src="./images/table5.png" alt="" height="53px" width="53px"></span>
+                                <a href="">	Fitbit Sense Advanced Smartwatch with Tools fo...</a>
+                            </td>
+                            <td><img src="./images/customer3.webp" alt="" class="rounded rounded-circle"> Richard Dawkins</td>
+                            <td>
+                                <i class="bi bi-star-fill text-warning"></i>
+                                <i class="bi bi-star-fill text-warning"></i>
+                                <i class="bi bi-star-fill text-warning"></i>
+                                <i class="bi bi-star-fill text-warning"></i>
+                                <i class="bi bi-star-fill text-warning"></i>
+                            </td>  
+                            <td>
+                                <span>This Fitbit is fantastic! I was trying to be in <br> better shape and needed some motivation, so <br> I decided to treat myself to a new Fitbit.</span>
+                            </td>
+                            <td>
+                                <span class="badge bg-success">Approved</span>
+                            </td>
+                            <td>
+                                Just Now ...
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox" name="" id=""></td>
+                            <td>
+                                <span class="rounded"><img src="./images/table6.png" alt="" height="53px" width="53px"></span>
+                                <a href="">	Fitbit Sense Advanced Smartwatch with Tools fo...</a>
+                            </td>
+                            <td><img src="./images/customer5.webp" alt="" class="rounded rounded-circle"> Richard Dawkins</td>
+                            <td>
+                                <i class="bi bi-star-fill text-warning"></i>
+                                <i class="bi bi-star-fill text-warning"></i>
+                                <i class="bi bi-star-fill text-warning"></i>
+                                <i class="bi bi-star-fill text-warning"></i>
+                                <i class="bi bi-star-fill text-warning"></i>
+                            </td>  
+                            <td>
+                                <span>This Fitbit is fantastic! I was trying to be in <br> better shape and needed some motivation, so <br> I decided to treat myself to a new Fitbit.</span>
+                            </td>
+                            <td>
+                                <span class="badge bg-success">Approved</span>
+                            </td>
+                            <td>
+                                Just Now ...
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <!-- five content -->
+   <div class="five-content">
+        <div class="container">
+            <div class="row p-sm-0">
+                <div class="col-lg-6 col-sm-12">
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th>Country</th>
+                                <th>Users</th>
+                                <th>Transactions</th>
+                                <th>Revenue</th>
+                                <th>Conv.Rate</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td></td>
+                                <td><h3>377,630</h3></td>
+                                <td><h3>236</h3></td>
+                                <td><h3>$15,758</h3></td>
+                                <td><h3>10.32%</h3></td>
+                            </tr>
+                            <tr>
+                                <td>1.<img src="./images/india.jpeg" alt="" height="20px" width="20px"> India</td>
+                                <td>82896 (41.6%)</td>
+                                <td>67 (34.3%)</td>
+                                <td>$7560</td>
+                                <td>14.24%</td>
+                            </tr>
+                            <tr>
+                                <td>2.<img src="./images/china.jpeg" alt="" height="20px" width="20px"> china</td>
+                                <td>50496 (24.3%)</td>
+                                <td>54 (23.8%)</td>
+                                <td>$5633</td>
+                                <td>55.55%</td>
+                            </tr>
+                            <tr>
+                                <td>3.<img src="./images/usa.jpeg" alt="" height="20px" width="20px"> usa</td>
+                                <td>45679 (19.7%)</td>
+                                <td>35 (19.7%)</td>
+                                <td>$4235</td>
+                                <td>12.55%</td>
+                            </tr>
+                            <tr>
+                                <td>4. <img src="./images/vietnam.jpeg" alt="" height="20px" width="20px"> vietnam</td>
+                                <td>15007 (11.9%)</td>
+                                <td>22 (9.54%)</td>
+                                <td>$3235</td>
+                                <td>55.1%</td>
+                            </tr>
+
+                        </tbody>
+                    </table>
+                </div>
+                <div class="col-lg-6 overflow-hidden col-sm-12 mt-sm-5 ms-sm-auto mt-lg-0">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d119040.88071947453!2d72.83998720000001!3d21.191065599999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1smr!2sin!4v1707760025625!5m2!1smr!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+        </div>
+   </div>
+
+   <!-- six content -->
+   <div class="six-content bg-white overflow-hidden">
+        <div class="row mt-5">
+            <div class="col-lg-6 col-sm-12">
+                <h3>Projection vs actual</h3>
+                <span>Actual earnings vs projected earnings</span>
+                <div>
+                    <canvas id="myChart1"></canvas>
+                </div>
+            </div>
+            <div class="col-lg-6 col-sm-12">
+                <h3>Returning customer rate</h3>
+                <span>Rate of customers returning to your shop over time</span>
+                <div>
+                    <canvas id="myChart2"></canvas>
+                </div>
+            </div>
+        </div>
+   </div>
+
+   <!-- footer -->
+   <div class="footer">
+        <p>Thank you for creating with Phoenix | 2023 &copy; <a href="">Themewagon</a></p>
+   </div>
+    <!-- script here -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script>
+        var chart = new ej.charts.Chart({
+            //Initializing Primary X Axis
+            primaryXAxis: {
+                valueType: 'Category',
+                title: 'Countries',
+            },
+            //Initializing Primary Y Axis
+             primaryYAxis: {
+                title: 'Medals in number'
+            },
+ 
+            //Initializing Chart Series
+            series: [
+                {
+                    type: 'Column',
+                    dataSource: [
+                        { country: "USA", medal: 50 },
+                        { country: "China", medal: 40 },
+                        { country: "Japan", medal: 70 },
+                        { country: "Australia", medal: 60 },
+                        { country: "France", medal: 30 },
+                    ],
+                    xName: 'country',
+                    yName: 'medal',
+                }
+            ],
+        });
+        chart.appendTo('#container');
+        const ctx = document.getElementById('myChart2');
+        const cty=document.getElementById("myChart1");
+        const box1=document.getElementById("myChart3");
+        const box2=document.getElementById("myChart4");
+        const box3=document.getElementById("myChart5");
+        const box4=document.getElementById("myChart6");
+        new Chart(ctx, {
+          type: 'line',
+          data: {
+            labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
+            datasets: [{
+              label: '# of Votes',
+              data: [12, 19, 3, 5, 2, 3],
+              borderWidth: 1
+            }]
+          },
+          options: {
+            scales: {
+              y: {
+                beginAtZero: true
+              }
+            }
+          }
+        });
+        new Chart(cty, {
+          type: 'bar',
+          data: {
+            labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
+            datasets: [{
+              label: '# of Votes',
+              data: [12, 19, 3, 5, 2, 3],
+              borderWidth: 1
+            }]
+          },
+          options: {
+            scales: {
+              y: {
+                beginAtZero: true
+              }
+            }
+          }
+        });
+        //boxes graphs
+        new Chart(box1, {
+            type: 'bar',
+            data: {
+              labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
+              datasets: [{
+                label: '# of Votes',
+                data: [12, 19, 3, 5, 2, 3],
+                borderWidth: 1
+              }]
+            },
+            options: {
+              scales: {
+                y: {
+                  beginAtZero: true
+                }
+              }
+            }
+        });
+          
+        new Chart(box2, {
+            type: 'line',
+            data: {
+              labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
+              datasets: [{
+                label: '# of Votes',
+                data: [12, 19, 3, 5, 2, 3],
+                borderWidth: 1
+              }]
+            },
+            options: {
+              scales: {
+                y: {
+                  beginAtZero: true
+                }
+              }
+            }
+          });
+    
+        new Chart(box3, {
+            type: 'polarArea',
+            data: {
+              labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
+              datasets: [{
+                label: '# of Votes',
+                data: [12, 19, 3, 5, 2, 3],
+                borderWidth: 1
+              }]
+            },
+            options: {
+              scales: {
+                y: {
+                  beginAtZero: true
+                }
+              }
+            }
+          });
+          
+        new Chart(box4, {
+            type: 'pie',
+            data: {
+              labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
+              datasets: [{
+                label: '# of Votes',
+                data: [12, 19, 3, 5, 2, 3],
+                borderWidth: 1
+              }]
+            },
+            options: {
+              scales: {
+                y: {
+                  beginAtZero: true
+                }
+              }
+            }
+          });
+    </script>
+</body>
+</html>
